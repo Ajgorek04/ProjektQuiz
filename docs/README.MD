@@ -4,6 +4,8 @@
 
 Gra quizowa, która umożliwia wielu graczom odpowiadanie na pytania z różnych kategorii. Gra jest oparta na plikach tekstowych, które mogą być łatwo rozszerzane przez użytkownika.
 
+Szczegółowy plan funkcjonalności gry, w tym tryby gry, struktura pytań, interfejs użytkownika oraz sposób rozbudowy bazy pytań, znajduje się w [planie funkcjonalności](docs/plan_funkcjonalnosci.md).
+
 ## Tryby gry
 
 - **Tryb solo**: Graj sam i sprawdź, jak dobrze znasz różne tematy.
