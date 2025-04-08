@@ -1,10 +1,17 @@
 # Gra Quizowa dla wielu graczy
 
-## Opis
+## Spis Treści
 
-Gra quizowa, która umożliwia wielu graczom odpowiadanie na pytania z różnych kategorii. Gra jest oparta na plikach tekstowych, które mogą być łatwo rozszerzane przez użytkownika.
+1. [Opis Projektu](#opis-projektu)
+2. [Tryby gry](#tryby-gry)
+3. [Instalacja](#instalacja)
+4. [Jak korzystać z programu?](#jak-korzystać-z-programu)
+5. [Technologie](#technologie)
+6. [Plik `databaseeditor`](#plik-databaseeditor)
 
-Szczegółowy plan funkcjonalności gry, w tym tryby gry, struktura pytań, interfejs użytkownika oraz sposób rozbudowy bazy pytań, znajduje się w [planie funkcjonalności](https://github.com/Ajgorek04/ProjektQuiz/blob/main/docs/plan_funkcjonalnosci.md).
+## Opis Projektu
+
+Gra quizowa, która umożliwia wielu graczom odpowiadanie na pytania z różnych kategorii. Gra jest oparta na plikach tekstowych, które mogą być łatwo rozszerzane przez użytkownika. Szczegółowy plan funkcjonalności gry, w tym tryby gry, struktura pytań, interfejs użytkownika oraz sposób rozbudowy bazy pytań, znajduje się w planie funkcjonalności.
 
 ## Tryby gry
 
@@ -13,37 +20,89 @@ Szczegółowy plan funkcjonalności gry, w tym tryby gry, struktura pytań, inte
 
 ## Instalacja
 
-1. **Zainstaluj `g++`** (kompilator C++). Możesz zainstalować go na różne sposoby, w zależności od systemu:
+### Wymagania:
 
-   - Na **Windowsie**: Zainstaluj **MinGW** (zawiera `g++`) lub użyj **MSYS2**.
-   - Na **Linuxie** i **macOS**: Zainstaluj `g++` za pomocą menedżera pakietów:
-     - Dla Ubuntu: `sudo apt install g++`
-     - Dla macOS: `brew install gcc`
+- Kompilator C++ (np. g++).
+- Git do sklonowania repozytorium.
 
-2. **Sklonuj repozytorium**: Jeśli masz zainstalowanego Git, sklonuj repozytorium na swoim komputerze. Użyj polecenia:  
-   `git clone https://github.com/Ajgorek04/ProjektQuiz.git`
+### Kroki Instalacyjne:
 
-3. **Wejdź do katalogu z projektem**: Po sklonowaniu repozytorium, przejdź do katalogu projektu, używając następującego polecenia:  
-   `cd ProjektQuiz`
+1. **Zainstaluj g++ (kompilator C++)**:
 
-4. **Zbuduj projekt**: W katalogu `src`, uruchom poniższe polecenie, aby skompilować plik wykonywalny:
+   - Na Windowsie:
+     - Zainstaluj MinGW (zawiera g++) lub użyj MSYS2.
+   - Na Linuxie i macOS:
+     - Dla Ubuntu:
+       ```bash
+       sudo apt install g++
+       ```
+     - Dla macOS:
+       ```bash
+       brew install gcc
+       ```
 
-   - Na **Windowsie**:  
-     `g++ -o quiz src/main.cpp src/gui.cpp src/editor.cpp src/logic.cpp`
-   - Na **Linuxie/macOS**:  
-     `g++ -o quiz src/main.cpp src/gui.cpp src/editor.cpp src/logic.cpp`
+2. **Sklonuj repozytorium**:
+
+   Jeśli masz zainstalowanego Git, sklonuj repozytorium na swoim komputerze:
+
+   ```bash
+   git clone https://github.com/Ajgorek04/ProjektQuiz.git
+   ```
+
+3. **Wejdź do katalogu z projektem**:
+
+   Po sklonowaniu repozytorium, przejdź do katalogu projektu:
+
+   ```bash
+   cd ProjektQuiz
+   ```
+
+4. **Zbuduj projekt**:
+
+   W katalogu `src`, uruchom poniższe polecenie, aby skompilować plik wykonywalny:
+
+   - Na Windowsie:
+     ```bash
+     g++ -o quiz src/main.cpp src/gui.cpp src/editor.cpp src/logic.cpp
+     ```
+   - Na Linuxie/macOS:
+     ```bash
+     g++ -o quiz src/main.cpp src/gui.cpp src/editor.cpp src/logic.cpp
+     ```
 
    To polecenie skompiluje plik wykonywalny o nazwie `quiz.exe` (na systemie Windows) lub `quiz` (na systemach Linux/macOS).
 
-5. **Uruchom grę**: Po skompilowaniu programu, uruchom go za pomocą odpowiedniego polecenia:
+5. **Uruchom grę**:
 
-   - Na **Windowsie**:  
-     `.\quiz.exe`
-   - Na **Linuxie/macOS**:  
-     `./quiz`
+   Po skompilowaniu programu, uruchom go za pomocą odpowiedniego polecenia:
 
-6. **Rozpocznij grę**: Po uruchomieniu gry, wybierz:
-   - **Tryb gry** (solo lub wieloosobowy),
-   - **Kategoria pytań**,
-   - **Odpowiedzi na pytania**,
-   - **Na koniec uzyskasz wynik**.
+   - Na Windowsie:
+     ```bash
+     .\quiz.exe
+     ```
+   - Na Linuxie/macOS:
+     ```bash
+     ./quiz
+     ```
+
+6. **Plik `databaseeditor`**:
+
+   Aby edytować pytania i kategorie pytań w grze, możesz skorzystać z pliku `databaseeditor`, który znajduje się w folderze projektu. Ten plik umożliwia edytowanie danych quizu i jest kluczowy do modyfikacji pytań oraz kategorii.
+
+## Jak korzystać z programu?
+
+Po uruchomieniu gry użytkownik może:
+
+- Wybrać tryb gry (solo lub wieloosobowy).
+- Wybierać kategorię pytań.
+- Odpowiadać na pytania.
+- Na koniec uzyskać wynik.
+
+## Technologie
+
+- **C++**: Język programowania użyty do stworzenia gry.
+- **CSV**: Format plików wykorzystywany do przechowywania danych pytań.
+
+## Plik `databaseeditor`
+
+Aby edytować pytania i kategorie pytań w grze, należy skorzystać z pliku `databaseeditor`, który znajduje się w folderze głównym projektu. Umożliwia on modyfikację bazy pytań i kategorii quizu.
