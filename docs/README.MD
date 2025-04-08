@@ -105,4 +105,4 @@ Po uruchomieniu gry użytkownik może:
 
 ## Plik `databaseeditor`
 
-[Aby edytować pytania i kategorie pytań w grze, należy skorzystać z pliku `databaseeditor`, który znajduje się w folderze głównym projektu. Umożliwia on modyfikację bazy pytań i kategorii quizu.](https://github.com/Ajgorek04/ProjektQuiz/tree/main/DataBaseEditor)
+Aby edytować pytania i kategorie pytań w grze, należy skorzystać z pliku `databaseeditor`, który znajduje się w folderze głównym projektu. Umożliwia on modyfikację bazy pytań i kategorii quizu.[(https://github.com/Ajgorek04/ProjektQuiz/tree/main/DataBaseEditor)]
