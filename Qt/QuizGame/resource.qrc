@@ -2,4 +2,7 @@
     <qresource prefix="/background">
         <file>images/background.jpg</file>
     </qresource>
+    <qresource prefix="/csv">
+        <file>categories.csv</file>
+    </qresource>
 </RCC>

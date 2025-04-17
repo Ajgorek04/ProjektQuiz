@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setWindowTitle("Quiz Game");
+    ui->stackedWidget->setCurrentIndex(0);
 
     QPixmap background(":/background/images/background.jpg");
         qDebug();
@@ -46,19 +47,19 @@ void MainWindow::on_exit_clicked()
 void MainWindow::on_category_clicked()
 {
     loadCategories();
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void MainWindow::loadCategories()
 {
-    QFile file("categories.csv"); // lub ":/categories.csv" jeśli wrzucisz do zasobów
+    QFile file(":/csv/categories.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku categories.csv";
         return;
     }
 
     QTextStream in(&file);
-    ui->listWidget_category->clear(); // czyść przed dodaniem
+    ui->listWidget_category->clear();
 
     while (!in.atEnd()) {
         QString line = in.readLine().trimmed();
@@ -69,3 +70,9 @@ void MainWindow::loadCategories()
 
     file.close();
 }
+
+void MainWindow::on_back_button_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
