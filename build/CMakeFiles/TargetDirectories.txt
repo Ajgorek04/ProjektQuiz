@@ -1,0 +1,9 @@
+F:/Coding/ProjektQuiz/build/CMakeFiles/QuizGame.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/edit_cache.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/rebuild_cache.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/list_install_components.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/install.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/install/local.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/install/strip.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/QuizGame_autogen_timestamp_deps.dir
+F:/Coding/ProjektQuiz/build/CMakeFiles/QuizGame_autogen.dir

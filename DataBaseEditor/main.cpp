@@ -143,7 +143,7 @@ void showQuestions(const vector<Question>& questions) {
 }
 // Funkcja do zapisywania pytań do pliku CSV
 void saveQuestions(const vector<Question>& questions) {
-    ofstream questionsFile("../questions.csv");
+    ofstream questionsFile("../Qt/QuizGame/questions.csv");
 
     if (questionsFile.is_open()) {
         for (const auto& q : questions) {
@@ -156,7 +156,7 @@ void saveQuestions(const vector<Question>& questions) {
 }
 // Funkcja do zapisywania kategorii do pliku
 void saveCategories(const set<string>& categories) {
-    ofstream categoriesFile("../categories.csv");
+    ofstream categoriesFile("../Qt/QuizGame/categories.csv");
 
     if (categoriesFile.is_open()) {
         for (const auto& cat : categories) {
@@ -169,7 +169,7 @@ void saveCategories(const set<string>& categories) {
 }
 // Funkcja do wczytywania pytań z pliku
 void loadQuestions(vector<Question>& questions) {
-    ifstream questionsFile("../questions.csv");
+    ifstream questionsFile("../Qt/QuizGame/questions.csv");
     string line;
 
     if (questionsFile.is_open()) {
@@ -183,7 +183,7 @@ void loadQuestions(vector<Question>& questions) {
 }
 // Funkcja do wczytywania kategorii z pliku
 void loadCategories(set<string>& categories) {
-    ifstream categoriesFile("../categories.csv");
+    ifstream categoriesFile("../Qt/QuizGame/categories.csv");
     string line;
 
     if (categoriesFile.is_open()) {
