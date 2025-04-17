@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Script</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 36px;
+font-weight: bold;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>QUIZ GAME</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>270</y>
+      <width>271</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+    <widget class="QPushButton" name="start">
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}</string>
+     </property>
+     <property name="text">
+      <string>START</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #0099cc;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color:  #007399 ;
+}</string>
+     </property>
+     <property name="text">
+      <string>ZASADY</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #ffcc66;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color:   #ffaa00 ;
+}</string>
+     </property>
+     <property name="text">
+      <string>KATEGORIE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exit">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+     </property>
+     <property name="text">
+      <string>WYJŚCIE</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
