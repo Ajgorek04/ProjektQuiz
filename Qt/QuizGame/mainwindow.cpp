@@ -7,7 +7,7 @@
 #include <QDebug>
 #include <QFile>
 #include <QTextStream>
-
+#include "../../src/question.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -89,15 +89,8 @@ void MainWindow::loadQuestions()
         QStringList parts = line.split(';');
         if (parts.size() < 7) continue;
 
-        Question q;
-        q.category = parts[6]; // Kategoria
-        q.text = parts[0];     // Pytanie
-
-        // Odpowiedzi są w kolumnach 1, 2, 3, 4
-        q.answers = {parts[1], parts[2], parts[3], parts[4]}; // Odpowiedzi A, B, C, D
-
-        // Poprawna odpowiedź jest w kolumnie 5
-        q.correctAnswer = parts[5][0].toUpper(); // Ustawiamy poprawną odpowiedź (A, B, C, D)
+        // Tworzymy pytanie przy użyciu klasy Question
+        Question q(parts[0], {parts[1], parts[2], parts[3], parts[4]}, parts[5][0].toUpper(), parts[6]);
 
         questions.append(q);
     }
@@ -174,15 +167,14 @@ void MainWindow::checkAnswer(QChar answer)
 {
     const Question& q = questions[currentQuestionIndex];
 
-    if (answer == q.correctAnswer) {
+    if (answer == q.getCorrectAnswer()) {
         ui->label_feedback->setText("✅ Dobra odpowiedź!");
     } else {
-        ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(q.correctAnswer));
+        ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(q.getCorrectAnswer()));
     }
 
     ui->button_next->setEnabled(true);
 
-    // Zablokuj odpowiedzi
     ui->button_answerA->setEnabled(false);
     ui->button_answerB->setEnabled(false);
     ui->button_answerC->setEnabled(false);
@@ -203,14 +195,14 @@ void MainWindow::showQuestion()
 
     const Question& q = questions[currentQuestionIndex];
 
-    ui->label_question->setText(q.text); // Pytanie
+    ui->label_question->setText(q.getText());
 
-    ui->button_answerA->setText("A: " + q.answers[0]);
-    ui->button_answerB->setText("B: " + q.answers[1]);
-    ui->button_answerC->setText("C: " + q.answers[2]);
-    ui->button_answerD->setText("D: " + q.answers[3]);
+    QStringList answers = q.getAnswers();
+    ui->button_answerA->setText("A: " + answers[0]);
+    ui->button_answerB->setText("B: " + answers[1]);
+    ui->button_answerC->setText("C: " + answers[2]);
+    ui->button_answerD->setText("D: " + answers[3]);
 
-    // Reset przycisków
     ui->button_answerA->setEnabled(true);
     ui->button_answerB->setEnabled(true);
     ui->button_answerC->setEnabled(true);

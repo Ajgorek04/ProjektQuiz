@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "../../src/question.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -54,13 +55,6 @@ private:
     void loadQuestions();
     void showQuestion();
     void checkAnswer(QChar answer);
-
-    struct Question {
-        QString text;
-        QStringList answers;
-        QChar correctAnswer;
-        QString category;
-    };
 
     QVector<Question> questions;
     int currentQuestionIndex = 0;
