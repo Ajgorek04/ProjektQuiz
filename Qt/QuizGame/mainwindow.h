@@ -33,9 +33,36 @@ private slots:
 
     void on_back_button3_clicked();
 
+    void on_back_button4_clicked();
+
+    void on_tryb_gry1_clicked();
+
+    void on_button_next_clicked();
+
+
+    void on_button_answerA_clicked();
+
+    void on_button_answerB_clicked();
+
+    void on_button_answerC_clicked();
+
+    void on_button_answerD_clicked();
+
 private:
     Ui::MainWindow *ui;
     void loadCategories();
+    void loadQuestions();
+    void showQuestion();
+    void checkAnswer(QChar answer);
+
+    struct Question {
+        QString text;
+        QStringList answers;
+        QChar correctAnswer;
+        QString category;
+    };
+
+    QVector<Question> questions;
+    int currentQuestionIndex = 0;
 };
 #endif // MAINWINDOW_H
-

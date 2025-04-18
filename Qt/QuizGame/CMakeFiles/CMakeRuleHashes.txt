@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+6361850c1c0fc309e13fb26315b2fa25 CMakeFiles/QuizGame_autogen
+f9ad2633959f38863a2dcd2818bf37c3 QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp
+878587b6e7e0f14a504a4e14be9d3c07 QuizGame_autogen/timestamp
