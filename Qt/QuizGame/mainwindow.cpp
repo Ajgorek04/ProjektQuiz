@@ -76,3 +76,16 @@ void MainWindow::on_back_button_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+void MainWindow::on_back_button2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_rules_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+
