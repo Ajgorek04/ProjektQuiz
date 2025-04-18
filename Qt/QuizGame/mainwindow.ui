@@ -263,6 +263,154 @@ QPushButton:hover {
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>360</y>
+        <width>448</width>
+        <height>166</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="radioButton1">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    font-size: 18px;
+    padding: 15px 50px;
+    margin: 5px;
+    background-color: #388E3C;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #388E3C;
+    text-align: center;
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+}
+
+QRadioButton:hover {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+QRadioButton#radioButton1:checked {
+    background-color: #2E7D32;
+    border-color: #2E7D32;
+}</string>
+         </property>
+         <property name="text">
+          <string>RadioButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="radioButton2">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    font-size: 18px;
+    padding: 15px 50px;
+    margin: 5px;
+    background-color: #D32F2F;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #D32F2F;
+    text-align: center;
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+}
+
+QRadioButton:hover {
+    background-color: #F44336;
+    border-color: #F44336;
+}
+
+QRadioButton:checked {
+    background-color: #C62828;
+    border-color: #C62828;
+}</string>
+         </property>
+         <property name="text">
+          <string>RadioButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="radioButton3">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    font-size: 18px;
+    padding: 15px 50px;
+    margin: 5px;
+    background-color: #1976D2;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #1976D2;
+    text-align: center;
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+}
+
+QRadioButton:hover {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+QRadioButton:checked {
+    background-color: #1565C0;
+    border-color: #1565C0;
+}</string>
+         </property>
+         <property name="text">
+          <string>RadioButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="radioButton4">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    font-size: 18px;
+    padding: 15px 50px;
+    margin: 5px;
+    background-color: #FF9800;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #FF9800;
+    text-align: center;
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+}
+
+QRadioButton:hover {
+    background-color: #FFB74D;
+    border-color: #FFB74D;
+}
+
+QRadioButton:checked {
+    background-color: #FB8C00;
+    border-color: #FB8C00;
+}</string>
+         </property>
+         <property name="text">
+          <string>RadioButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="page3">
      <widget class="QListWidget" name="listWidget_category">
