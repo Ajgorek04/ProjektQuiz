@@ -35,7 +35,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_start_clicked()
 {
-    QMessageBox::information(this, "Start", "Rozpoczynamy grę!");
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void MainWindow::on_exit_clicked()
@@ -47,7 +47,7 @@ void MainWindow::on_exit_clicked()
 void MainWindow::on_category_clicked()
 {
     loadCategories();
-    ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
 void MainWindow::loadCategories()
@@ -81,11 +81,13 @@ void MainWindow::on_back_button2_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-
 void MainWindow::on_rules_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget->setCurrentIndex(3);
 }
 
-
+void MainWindow::on_back_button3_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
 

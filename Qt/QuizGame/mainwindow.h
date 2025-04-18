@@ -31,6 +31,8 @@ private slots:
 
     void on_back_button2_clicked();
 
+    void on_back_button3_clicked();
+
 private:
     Ui::MainWindow *ui;
     void loadCategories();
