@@ -69,9 +69,8 @@ include tests/CMakeFiles/tests.dir/progress.make
 include tests/CMakeFiles/tests.dir/flags.make
 
 tests/tests_autogen/timestamp: C:/Qt/6.9.0/mingw_64/bin/moc.exe
-tests/tests_autogen/timestamp: C:/Qt/6.9.0/mingw_64/bin/uic.exe
 tests/tests_autogen/timestamp: tests/CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target tests"
 	cd /d F:\Coding\ProjektQuiz\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen F:/Coding/ProjektQuiz/build/tests/CMakeFiles/tests_autogen.dir/AutogenInfo.json Debug
 	cd /d F:\Coding\ProjektQuiz\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Coding/ProjektQuiz/build/tests/tests_autogen/timestamp
 
@@ -93,11 +92,26 @@ tests/CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.s"
 	cd /d F:\Coding\ProjektQuiz\build\tests && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Coding\ProjektQuiz\build\tests\tests_autogen\mocs_compilation.cpp -o CMakeFiles\tests.dir\tests_autogen\mocs_compilation.cpp.s
 
+tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj: tests/CMakeFiles/tests.dir/flags.make
+tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
+tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj: F:/Coding/ProjektQuiz/src/question.cpp
+tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj: tests/CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj"
+	cd /d F:\Coding\ProjektQuiz\build\tests && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj -MF CMakeFiles\tests.dir\F_\Coding\ProjektQuiz\src\question.cpp.obj.d -o CMakeFiles\tests.dir\F_\Coding\ProjektQuiz\src\question.cpp.obj -c F:\Coding\ProjektQuiz\src\question.cpp
+
+tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.i"
+	cd /d F:\Coding\ProjektQuiz\build\tests && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Coding\ProjektQuiz\src\question.cpp > CMakeFiles\tests.dir\F_\Coding\ProjektQuiz\src\question.cpp.i
+
+tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.s"
+	cd /d F:\Coding\ProjektQuiz\build\tests && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Coding\ProjektQuiz\src\question.cpp -o CMakeFiles\tests.dir\F_\Coding\ProjektQuiz\src\question.cpp.s
+
 tests/CMakeFiles/tests.dir/test_question.cpp.obj: tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/test_question.cpp.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
 tests/CMakeFiles/tests.dir/test_question.cpp.obj: F:/Coding/ProjektQuiz/tests/test_question.cpp
 tests/CMakeFiles/tests.dir/test_question.cpp.obj: tests/CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/tests.dir/test_question.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/tests.dir/test_question.cpp.obj"
 	cd /d F:\Coding\ProjektQuiz\build\tests && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/test_question.cpp.obj -MF CMakeFiles\tests.dir\test_question.cpp.obj.d -o CMakeFiles\tests.dir\test_question.cpp.obj -c F:\Coding\ProjektQuiz\tests\test_question.cpp
 
 tests/CMakeFiles/tests.dir/test_question.cpp.i: cmake_force
@@ -111,12 +125,14 @@ tests/CMakeFiles/tests.dir/test_question.cpp.s: cmake_force
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.obj" \
+"CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj" \
 "CMakeFiles/tests.dir/test_question.cpp.obj"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
 tests/tests.exe: tests/CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.obj
+tests/tests.exe: tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj
 tests/tests.exe: tests/CMakeFiles/tests.dir/test_question.cpp.obj
 tests/tests.exe: tests/CMakeFiles/tests.dir/build.make
 tests/tests.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Test.a
@@ -124,7 +140,7 @@ tests/tests.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Core.a
 tests/tests.exe: tests/CMakeFiles/tests.dir/linkLibs.rsp
 tests/tests.exe: tests/CMakeFiles/tests.dir/objects1.rsp
 tests/tests.exe: tests/CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests.exe"
 	cd /d F:\Coding\ProjektQuiz\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

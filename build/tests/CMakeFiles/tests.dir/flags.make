@@ -6,5 +6,5 @@ CXX_DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"F:
 
 CXX_INCLUDES = @CMakeFiles/tests.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -g
 

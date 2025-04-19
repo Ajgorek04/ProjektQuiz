@@ -5,6 +5,14 @@
 		{
 			"compiler" : 
 			{
+				"implicit" : {},
+				"path" : "C:/msys64/ucrt64/bin/gcc.exe"
+			},
+			"language" : "C"
+		},
+		{
+			"compiler" : 
+			{
 				"id" : "GNU",
 				"implicit" : 
 				{

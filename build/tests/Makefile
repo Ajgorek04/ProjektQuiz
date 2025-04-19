@@ -202,6 +202,30 @@ tests_autogen/fast:
 	cd /d F:\Coding\ProjektQuiz\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_autogen.dir\build.make tests/CMakeFiles/tests_autogen.dir/build
 .PHONY : tests_autogen/fast
 
+F_/Coding/ProjektQuiz/src/question.obj: F_/Coding/ProjektQuiz/src/question.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/question.obj
+
+# target to build an object file
+F_/Coding/ProjektQuiz/src/question.cpp.obj:
+	cd /d F:\Coding\ProjektQuiz\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.obj
+
+F_/Coding/ProjektQuiz/src/question.i: F_/Coding/ProjektQuiz/src/question.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/question.i
+
+# target to preprocess a source file
+F_/Coding/ProjektQuiz/src/question.cpp.i:
+	cd /d F:\Coding\ProjektQuiz\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.i
+
+F_/Coding/ProjektQuiz/src/question.s: F_/Coding/ProjektQuiz/src/question.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/question.s
+
+# target to generate assembly for a file
+F_/Coding/ProjektQuiz/src/question.cpp.s:
+	cd /d F:\Coding\ProjektQuiz\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.s
+
 test_question.obj: test_question.cpp.obj
 .PHONY : test_question.obj
 
@@ -265,6 +289,9 @@ help:
 	@echo ... tests_autogen
 	@echo ... tests_autogen_timestamp_deps
 	@echo ... tests
+	@echo ... F_/Coding/ProjektQuiz/src/question.obj
+	@echo ... F_/Coding/ProjektQuiz/src/question.i
+	@echo ... F_/Coding/ProjektQuiz/src/question.s
 	@echo ... test_question.obj
 	@echo ... test_question.i
 	@echo ... test_question.s

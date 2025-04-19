@@ -1,0 +1,139 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c2d1b782aa43f01823e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-c41dc389f184a9b7232a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "F:/Coding/ProjektQuiz/tests",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QuizGame",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "QuizTests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "QuizGame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QuizGame-Debug-51329c9ded6ed8522291.json",
+					"name" : "QuizGame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QuizGame_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QuizGame_autogen-Debug-9a677041ed2e73aaed52.json",
+					"name" : "QuizGame_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QuizGame_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QuizGame_autogen_timestamp_deps-Debug-c04710b3a9256ff97313.json",
+					"name" : "QuizGame_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-tests-Debug-dea499e0473ad05a8388.json",
+					"name" : "tests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tests_autogen::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-tests_autogen-Debug-6a352967ac620bbdde65.json",
+					"name" : "tests_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tests_autogen_timestamp_deps::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-tests_autogen_timestamp_deps-Debug-04836ea32e44d8d1613c.json",
+					"name" : "tests_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/Coding/ProjektQuiz/build",
+		"source" : "F:/Coding/ProjektQuiz/Qt/QuizGame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

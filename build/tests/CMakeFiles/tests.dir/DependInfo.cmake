@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "tests/tests_autogen/timestamp" "custom" "tests/tests_autogen/deps"
+  "F:/Coding/ProjektQuiz/src/question.cpp" "tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj" "gcc" "tests/CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj.d"
   "F:/Coding/ProjektQuiz/tests/test_question.cpp" "tests/CMakeFiles/tests.dir/test_question.cpp.obj" "gcc" "tests/CMakeFiles/tests.dir/test_question.cpp.obj.d"
   "F:/Coding/ProjektQuiz/build/tests/tests_autogen/mocs_compilation.cpp" "tests/CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.obj" "gcc" "tests/CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.obj.d"
   )

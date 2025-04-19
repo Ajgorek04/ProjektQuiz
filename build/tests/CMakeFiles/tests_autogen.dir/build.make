@@ -68,9 +68,8 @@ include tests/CMakeFiles/tests_autogen.dir/progress.make
 tests/CMakeFiles/tests_autogen: tests/tests_autogen/timestamp
 
 tests/tests_autogen/timestamp: C:/Qt/6.9.0/mingw_64/bin/moc.exe
-tests/tests_autogen/timestamp: C:/Qt/6.9.0/mingw_64/bin/uic.exe
 tests/tests_autogen/timestamp: tests/CMakeFiles/tests_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target tests"
 	cd /d F:\Coding\ProjektQuiz\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen F:/Coding/ProjektQuiz/build/tests/CMakeFiles/tests_autogen.dir/AutogenInfo.json Debug
 	cd /d F:\Coding\ProjektQuiz\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Coding/ProjektQuiz/build/tests/tests_autogen/timestamp
 

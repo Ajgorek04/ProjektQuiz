@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj"
+  "CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj.d"
   "CMakeFiles/tests.dir/test_question.cpp.obj"
   "CMakeFiles/tests.dir/test_question.cpp.obj.d"
   "CMakeFiles/tests.dir/tests_autogen/mocs_compilation.cpp.obj"

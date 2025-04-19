@@ -199,6 +199,45 @@ QuizGame_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame_autogen.dir\build.make CMakeFiles/QuizGame_autogen.dir/build
 .PHONY : QuizGame_autogen/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named tests_autogen_timestamp_deps
+
+# Build rule for target.
+tests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests_autogen_timestamp_deps
+.PHONY : tests_autogen_timestamp_deps
+
+# fast build rule for target.
+tests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_autogen_timestamp_deps.dir\build.make tests/CMakeFiles/tests_autogen_timestamp_deps.dir/build
+.PHONY : tests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named tests_autogen
+
+# Build rule for target.
+tests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests_autogen
+.PHONY : tests_autogen
+
+# fast build rule for target.
+tests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_autogen.dir\build.make tests/CMakeFiles/tests_autogen.dir/build
+.PHONY : tests_autogen/fast
+
 F_/Coding/ProjektQuiz/src/question.obj: F_/Coding/ProjektQuiz/src/question.cpp.obj
 .PHONY : F_/Coding/ProjektQuiz/src/question.obj
 
@@ -333,7 +372,10 @@ help:
 	@echo ... rebuild_cache
 	@echo ... QuizGame_autogen
 	@echo ... QuizGame_autogen_timestamp_deps
+	@echo ... tests_autogen
+	@echo ... tests_autogen_timestamp_deps
 	@echo ... QuizGame
+	@echo ... tests
 	@echo ... F_/Coding/ProjektQuiz/src/question.obj
 	@echo ... F_/Coding/ProjektQuiz/src/question.i
 	@echo ... F_/Coding/ProjektQuiz/src/question.s

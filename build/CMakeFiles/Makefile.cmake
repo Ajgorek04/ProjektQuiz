@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake"
@@ -22,6 +23,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckIncludeFileCXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake"
@@ -29,16 +31,21 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindVulkan.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/Linker/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Linker/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-C-ABI.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake"
@@ -236,9 +243,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessAliasTargets.cmake"
   "F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeLists.txt"
   "F:/Coding/ProjektQuiz/Qt/QuizGame/resource.qrc"
+  "CMakeFiles/4.0.1/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeSystem.cmake"
+  "F:/Coding/ProjektQuiz/tests/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -254,6 +263,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/tests_autogen.dir/AutogenInfo.json"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -261,4 +272,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/QuizGame.dir/DependInfo.cmake"
   "CMakeFiles/QuizGame_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/QuizGame_autogen.dir/DependInfo.cmake"
+  "tests/CMakeFiles/tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/tests_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "tests/CMakeFiles/tests_autogen.dir/DependInfo.cmake"
   )
