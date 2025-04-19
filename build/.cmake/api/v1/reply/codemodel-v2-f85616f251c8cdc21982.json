@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-5c2339a0b699d1b77f58.json",
+					"jsonFile" : "directory-.-Debug-1508d6ff6e207301731b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QuizGame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QuizGame-Debug-24660925a14e27b7e84b.json",
+					"jsonFile" : "target-QuizGame-Debug-85e2dd9634a36694276c.json",
 					"name" : "QuizGame",
 					"projectIndex" : 0
 				},

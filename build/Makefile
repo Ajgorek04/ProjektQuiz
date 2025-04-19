@@ -199,6 +199,30 @@ QuizGame_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame_autogen.dir\build.make CMakeFiles/QuizGame_autogen.dir/build
 .PHONY : QuizGame_autogen/fast
 
+F_/Coding/ProjektQuiz/src/question.obj: F_/Coding/ProjektQuiz/src/question.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/question.obj
+
+# target to build an object file
+F_/Coding/ProjektQuiz/src/question.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.obj
+
+F_/Coding/ProjektQuiz/src/question.i: F_/Coding/ProjektQuiz/src/question.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/question.i
+
+# target to preprocess a source file
+F_/Coding/ProjektQuiz/src/question.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.i
+
+F_/Coding/ProjektQuiz/src/question.s: F_/Coding/ProjektQuiz/src/question.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/question.s
+
+# target to generate assembly for a file
+F_/Coding/ProjektQuiz/src/question.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.s
+
 QuizGame_autogen/EWIEGA46WW/qrc_resource.obj: QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj
 .PHONY : QuizGame_autogen/EWIEGA46WW/qrc_resource.obj
 
@@ -310,6 +334,9 @@ help:
 	@echo ... QuizGame_autogen
 	@echo ... QuizGame_autogen_timestamp_deps
 	@echo ... QuizGame
+	@echo ... F_/Coding/ProjektQuiz/src/question.obj
+	@echo ... F_/Coding/ProjektQuiz/src/question.i
+	@echo ... F_/Coding/ProjektQuiz/src/question.s
 	@echo ... QuizGame_autogen/EWIEGA46WW/qrc_resource.obj
 	@echo ... QuizGame_autogen/EWIEGA46WW/qrc_resource.i
 	@echo ... QuizGame_autogen/EWIEGA46WW/qrc_resource.s

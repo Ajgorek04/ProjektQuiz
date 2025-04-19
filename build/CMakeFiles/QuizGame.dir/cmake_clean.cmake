@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj"
+  "CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj.d"
   "CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj"
   "CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj.d"
   "CMakeFiles/QuizGame.dir/QuizGame_autogen/mocs_compilation.cpp.obj"

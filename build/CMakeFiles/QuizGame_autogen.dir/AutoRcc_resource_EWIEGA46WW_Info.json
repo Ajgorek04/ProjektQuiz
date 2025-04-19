@@ -10,7 +10,8 @@
 	"INPUTS" : 
 	[
 		"F:/Coding/ProjektQuiz/Qt/QuizGame/categories.csv",
-		"F:/Coding/ProjektQuiz/Qt/QuizGame/images/background.jpg"
+		"F:/Coding/ProjektQuiz/Qt/QuizGame/images/background.jpg",
+		"F:/Coding/ProjektQuiz/Qt/QuizGame/questions.csv"
 	],
 	"LOCK_FILE" : "F:/Coding/ProjektQuiz/build/CMakeFiles/QuizGame_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

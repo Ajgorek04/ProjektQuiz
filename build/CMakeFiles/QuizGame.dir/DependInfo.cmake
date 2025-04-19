@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "QuizGame_autogen/timestamp" "custom" "QuizGame_autogen/deps"
+  "F:/Coding/ProjektQuiz/src/question.cpp" "CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj" "gcc" "CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj.d"
   "F:/Coding/ProjektQuiz/build/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp" "CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj" "gcc" "CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj.d"
   "F:/Coding/ProjektQuiz/build/QuizGame_autogen/mocs_compilation.cpp" "CMakeFiles/QuizGame.dir/QuizGame_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/QuizGame.dir/QuizGame_autogen/mocs_compilation.cpp.obj.d"
   "F:/Coding/ProjektQuiz/Qt/QuizGame/main.cpp" "CMakeFiles/QuizGame.dir/main.cpp.obj" "gcc" "CMakeFiles/QuizGame.dir/main.cpp.obj.d"

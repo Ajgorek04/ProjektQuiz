@@ -8,6 +8,8 @@
 #include <QFile>
 #include <QTextStream>
 #include "../../src/question.h"
+#include <algorithm>
+#include <random>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -89,18 +91,20 @@ void MainWindow::loadQuestions()
         QStringList parts = line.split(';');
         if (parts.size() < 7) continue;
 
-        // Tworzymy pytanie przy użyciu klasy Question
         Question q(parts[0], {parts[1], parts[2], parts[3], parts[4]}, parts[5][0].toUpper(), parts[6]);
-
         questions.append(q);
     }
 
     file.close();
 
+    // 🔀 Losowanie pytań
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(questions.begin(), questions.end(), g);
+
     currentQuestionIndex = 0;
     showQuestion();
 }
-
 
 void MainWindow::on_back_button_clicked()
 {
@@ -190,12 +194,14 @@ void MainWindow::showQuestion()
         ui->button_answerC->setEnabled(false);
         ui->button_answerD->setEnabled(false);
         ui->button_next->setEnabled(false);
+        ui->label_category->clear(); // Czyść kategorię po zakończeniu
         return;
     }
 
     const Question& q = questions[currentQuestionIndex];
 
     ui->label_question->setText(q.getText());
+    ui->label_category->setText("Kategoria: " + q.getCategory()); // 🆕 Wyświetl kategorię
 
     QStringList answers = q.getAnswers();
     ui->button_answerA->setText("A: " + answers[0]);
@@ -210,3 +216,4 @@ void MainWindow::showQuestion()
     ui->button_next->setEnabled(false);
     ui->label_feedback->clear();
 }
+
