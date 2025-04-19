@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.16)
 
 project(QuizGame VERSION 0.1 LANGUAGES CXX)
 
+find_package(Qt6 REQUIRED COMPONENTS Test)
+
+add_subdirectory(../../tests ${CMAKE_BINARY_DIR}/tests)
+
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
