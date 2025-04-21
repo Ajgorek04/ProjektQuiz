@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "../../src/question.h"
+#include "../../src/quizmanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -56,7 +57,7 @@ private:
     void showQuestion();
     void checkAnswer(QChar answer);
 
-    QVector<Question> questions;
+    QuizManager quizManager;
     int currentQuestionIndex = 0;
 };
 #endif // MAINWINDOW_H

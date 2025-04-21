@@ -75,35 +75,12 @@ void MainWindow::loadCategories()
 
 void MainWindow::loadQuestions()
 {
-    QFile file(":/questions/questions.csv");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qDebug() << "Nie można otworzyć pliku questions.csv";
-        return;
+    if (quizManager.loadQuestions(":/questions/questions.csv")) {
+        quizManager.shuffleQuestions();
+        showQuestion();
+    } else {
+        qDebug() << "Błąd podczas ładowania pytań";
     }
-
-    QTextStream in(&file);
-    questions.clear();
-
-    while (!in.atEnd()) {
-        QString line = in.readLine().trimmed();
-        if (line.isEmpty()) continue;
-
-        QStringList parts = line.split(';');
-        if (parts.size() < 7) continue;
-
-        Question q(parts[0], {parts[1], parts[2], parts[3], parts[4]}, parts[5][0].toUpper(), parts[6]);
-        questions.append(q);
-    }
-
-    file.close();
-
-    // 🔀 Losowanie pytań
-    std::random_device rd;
-    std::mt19937 g(rd());
-    std::shuffle(questions.begin(), questions.end(), g);
-
-    currentQuestionIndex = 0;
-    showQuestion();
 }
 
 void MainWindow::on_back_button_clicked()
@@ -142,7 +119,7 @@ void MainWindow::on_tryb_gry1_clicked()
 
 void MainWindow::on_button_next_clicked()
 {
-    currentQuestionIndex++;
+    quizManager.nextQuestion();
     showQuestion();
 }
 
@@ -169,16 +146,13 @@ void MainWindow::on_button_answerD_clicked()
 
 void MainWindow::checkAnswer(QChar answer)
 {
-    const Question& q = questions[currentQuestionIndex];
-
-    if (answer == q.getCorrectAnswer()) {
+    if (quizManager.checkAnswer(answer)) {
         ui->label_feedback->setText("✅ Dobra odpowiedź!");
     } else {
-        ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(q.getCorrectAnswer()));
+        ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(quizManager.currentQuestion().getCorrectAnswer()));
     }
 
     ui->button_next->setEnabled(true);
-
     ui->button_answerA->setEnabled(false);
     ui->button_answerB->setEnabled(false);
     ui->button_answerC->setEnabled(false);
@@ -187,21 +161,21 @@ void MainWindow::checkAnswer(QChar answer)
 
 void MainWindow::showQuestion()
 {
-    if (currentQuestionIndex >= questions.size()) {
+    if (!quizManager.hasMoreQuestions()) {
         ui->label_question->setText("Koniec quizu!");
         ui->button_answerA->setEnabled(false);
         ui->button_answerB->setEnabled(false);
         ui->button_answerC->setEnabled(false);
         ui->button_answerD->setEnabled(false);
         ui->button_next->setEnabled(false);
-        ui->label_category->clear(); // Czyść kategorię po zakończeniu
+        ui->label_category->clear();
         return;
     }
 
-    const Question& q = questions[currentQuestionIndex];
+    const Question& q = quizManager.currentQuestion();
 
     ui->label_question->setText(q.getText());
-    ui->label_category->setText("Kategoria: " + q.getCategory()); // 🆕 Wyświetl kategorię
+    ui->label_category->setText("Kategoria: " + q.getCategory());
 
     QStringList answers = q.getAnswers();
     ui->button_answerA->setText("A: " + answers[0]);

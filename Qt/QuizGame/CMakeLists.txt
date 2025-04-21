@@ -24,6 +24,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
         ../../src/question.cpp
         ../../src/question.h
+        ../../src/question.cpp
+        ../../src/quizmanager.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
