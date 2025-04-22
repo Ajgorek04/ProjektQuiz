@@ -25,6 +25,12 @@
 },
 {
   "directory": "F:/Coding/ProjektQuiz/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/QuizGame.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\QuizGame.dir\\F_\\Coding\\ProjektQuiz\\src\\quizmanager.cpp.obj -c F:\\Coding\\ProjektQuiz\\src\\quizmanager.cpp",
+  "file": "F:/Coding/ProjektQuiz/src/quizmanager.cpp",
+  "output": "CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj"
+},
+{
+  "directory": "F:/Coding/ProjektQuiz/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/QuizGame.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\QuizGame.dir\\QuizGame_autogen\\EWIEGA46WW\\qrc_resource.cpp.obj -c F:\\Coding\\ProjektQuiz\\build\\QuizGame_autogen\\EWIEGA46WW\\qrc_resource.cpp",
   "file": "F:/Coding/ProjektQuiz/build/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp",
   "output": "CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj"

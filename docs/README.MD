@@ -20,81 +20,16 @@ Gra quizowa, która umożliwia wielu graczom odpowiadanie na pytania z różnych
 
 ## Instalacja
 
-### Wymagania:
-
-- Kompilator C++ (np. g++).
-- Git do sklonowania repozytorium.
-
-### Kroki Instalacyjne:
-
-1. **Zainstaluj g++ (kompilator C++)**:
-
-   - Na Windowsie:
-     - Zainstaluj MinGW (zawiera g++) lub użyj MSYS2.
-   - Na Linuxie i macOS:
-     - Dla Ubuntu:
-       ```bash
-       sudo apt install g++
-       ```
-     - Dla macOS:
-       ```bash
-       brew install gcc
-       ```
-
-2. **Sklonuj repozytorium**:
-
-   Jeśli masz zainstalowanego Git, sklonuj repozytorium na swoim komputerze:
-
-   ```bash
-   git clone https://github.com/Ajgorek04/ProjektQuiz.git
-   ```
-
-3. **Wejdź do katalogu z projektem**:
-
-   Po sklonowaniu repozytorium, przejdź do katalogu projektu:
-
-   ```bash
-   cd ProjektQuiz
-   ```
-
-4. **Zbuduj projekt**:
-
-   W katalogu `src`, uruchom poniższe polecenie, aby skompilować plik wykonywalny:
-
-   - Na Windowsie:
-     ```bash
-     g++ -o quiz src/main.cpp src/gui.cpp src/editor.cpp src/logic.cpp
-     ```
-   - Na Linuxie/macOS:
-     ```bash
-     g++ -o quiz src/main.cpp src/gui.cpp src/editor.cpp src/logic.cpp
-     ```
-
-   To polecenie skompiluje plik wykonywalny o nazwie `quiz.exe` (na systemie Windows) lub `quiz` (na systemach Linux/macOS).
-
-5. **Uruchom grę**:
-
-   Po skompilowaniu programu, uruchom go za pomocą odpowiedniego polecenia:
-
-   - Na Windowsie:
-     ```bash
-     .\quiz.exe
-     ```
-   - Na Linuxie/macOS:
-     ```bash
-     ./quiz
-     ```
-
-6. **Plik `databaseeditor`**:
-
-   Aby edytować pytania i kategorie pytań w grze, możesz skorzystać z pliku `databaseeditor`, który znajduje się w folderze projektu. Ten plik umożliwia edytowanie danych quizu i jest kluczowy do modyfikacji pytań oraz kategorii.
+- Pobierz pliki gry klikając w odnośnik obok ⟶ [QuizGame](https://mega.nz/file/Lk42Aa6A#AhSkeGNNEXd6OswVHSCDKVicmyWV_LRKCfyrIYgJG3U)
+- Rozpakuj pobrany folder (prawy przycisk myszy ⟶ wyodrębnij wszytkie)
+- Przejdź do folderu exe
+- Uruchom plik QuizGame.exe
 
 ## Jak korzystać z programu?
 
 Po uruchomieniu gry użytkownik może:
 
 - Wybrać tryb gry (solo lub wieloosobowy).
-- Wybierać kategorię pytań.
 - Odpowiadać na pytania.
 - Na koniec uzyskać wynik.
 

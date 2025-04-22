@@ -22,7 +22,6 @@ Pytania są przechowywane w plikach tekstowych, które można łatwo edytować. 
 Gra posiada interfejs graficzny (GUI), który umożliwia:
 
 - wybór trybu gry,
-- wybór kategorii pytań,
 - wyświetlanie pytań i odpowiedzi,
 - wyświetlanie wyniku na koniec gry.
 

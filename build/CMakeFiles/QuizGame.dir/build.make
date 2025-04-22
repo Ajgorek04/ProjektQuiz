@@ -148,11 +148,26 @@ CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Coding\ProjektQuiz\src\question.cpp -o CMakeFiles\QuizGame.dir\F_\Coding\ProjektQuiz\src\question.cpp.s
 
+CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj: CMakeFiles/QuizGame.dir/flags.make
+CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj: CMakeFiles/QuizGame.dir/includes_CXX.rsp
+CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj: F:/Coding/ProjektQuiz/src/quizmanager.cpp
+CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj: CMakeFiles/QuizGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj -MF CMakeFiles\QuizGame.dir\F_\Coding\ProjektQuiz\src\quizmanager.cpp.obj.d -o CMakeFiles\QuizGame.dir\F_\Coding\ProjektQuiz\src\quizmanager.cpp.obj -c F:\Coding\ProjektQuiz\src\quizmanager.cpp
+
+CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Coding\ProjektQuiz\src\quizmanager.cpp > CMakeFiles\QuizGame.dir\F_\Coding\ProjektQuiz\src\quizmanager.cpp.i
+
+CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Coding\ProjektQuiz\src\quizmanager.cpp -o CMakeFiles\QuizGame.dir\F_\Coding\ProjektQuiz\src\quizmanager.cpp.s
+
 CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj: CMakeFiles/QuizGame.dir/flags.make
 CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj: CMakeFiles/QuizGame.dir/includes_CXX.rsp
 CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj: QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp
 CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj: CMakeFiles/QuizGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj -MF CMakeFiles\QuizGame.dir\QuizGame_autogen\EWIEGA46WW\qrc_resource.cpp.obj.d -o CMakeFiles\QuizGame.dir\QuizGame_autogen\EWIEGA46WW\qrc_resource.cpp.obj -c F:\Coding\ProjektQuiz\build\QuizGame_autogen\EWIEGA46WW\qrc_resource.cpp
 
 CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.i: cmake_force
@@ -169,6 +184,7 @@ QuizGame_OBJECTS = \
 "CMakeFiles/QuizGame.dir/main.cpp.obj" \
 "CMakeFiles/QuizGame.dir/mainwindow.cpp.obj" \
 "CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj" \
+"CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj" \
 "CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj"
 
 # External object files for target QuizGame
@@ -178,6 +194,7 @@ QuizGame.exe: CMakeFiles/QuizGame.dir/QuizGame_autogen/mocs_compilation.cpp.obj
 QuizGame.exe: CMakeFiles/QuizGame.dir/main.cpp.obj
 QuizGame.exe: CMakeFiles/QuizGame.dir/mainwindow.cpp.obj
 QuizGame.exe: CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj
+QuizGame.exe: CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj
 QuizGame.exe: CMakeFiles/QuizGame.dir/QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj
 QuizGame.exe: CMakeFiles/QuizGame.dir/build.make
 QuizGame.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a
@@ -187,7 +204,7 @@ QuizGame.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a
 QuizGame.exe: CMakeFiles/QuizGame.dir/linkLibs.rsp
 QuizGame.exe: CMakeFiles/QuizGame.dir/objects1.rsp
 QuizGame.exe: CMakeFiles/QuizGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable QuizGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable QuizGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\QuizGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

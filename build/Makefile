@@ -262,6 +262,30 @@ F_/Coding/ProjektQuiz/src/question.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/question.cpp.s
 .PHONY : F_/Coding/ProjektQuiz/src/question.cpp.s
 
+F_/Coding/ProjektQuiz/src/quizmanager.obj: F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/quizmanager.obj
+
+# target to build an object file
+F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/quizmanager.cpp.obj
+
+F_/Coding/ProjektQuiz/src/quizmanager.i: F_/Coding/ProjektQuiz/src/quizmanager.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/quizmanager.i
+
+# target to preprocess a source file
+F_/Coding/ProjektQuiz/src/quizmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/quizmanager.cpp.i
+
+F_/Coding/ProjektQuiz/src/quizmanager.s: F_/Coding/ProjektQuiz/src/quizmanager.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/quizmanager.s
+
+# target to generate assembly for a file
+F_/Coding/ProjektQuiz/src/quizmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuizGame.dir\build.make CMakeFiles/QuizGame.dir/F_/Coding/ProjektQuiz/src/quizmanager.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/quizmanager.cpp.s
+
 QuizGame_autogen/EWIEGA46WW/qrc_resource.obj: QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp.obj
 .PHONY : QuizGame_autogen/EWIEGA46WW/qrc_resource.obj
 
@@ -379,6 +403,9 @@ help:
 	@echo ... F_/Coding/ProjektQuiz/src/question.obj
 	@echo ... F_/Coding/ProjektQuiz/src/question.i
 	@echo ... F_/Coding/ProjektQuiz/src/question.s
+	@echo ... F_/Coding/ProjektQuiz/src/quizmanager.obj
+	@echo ... F_/Coding/ProjektQuiz/src/quizmanager.i
+	@echo ... F_/Coding/ProjektQuiz/src/quizmanager.s
 	@echo ... QuizGame_autogen/EWIEGA46WW/qrc_resource.obj
 	@echo ... QuizGame_autogen/EWIEGA46WW/qrc_resource.i
 	@echo ... QuizGame_autogen/EWIEGA46WW/qrc_resource.s

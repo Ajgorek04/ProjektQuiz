@@ -409,6 +409,12 @@
 			"MU",
 			"A6Y6MKZUVI/moc_question.cpp",
 			null
+		],
+		[
+			"F:/Coding/ProjektQuiz/src/quizmanager.h",
+			"MU",
+			"A6Y6MKZUVI/moc_quizmanager.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -484,7 +490,8 @@
 	[
 		[ "F:/Coding/ProjektQuiz/Qt/QuizGame/main.cpp", "MU", null ],
 		[ "F:/Coding/ProjektQuiz/Qt/QuizGame/mainwindow.cpp", "MU", null ],
-		[ "F:/Coding/ProjektQuiz/src/question.cpp", "MU", null ]
+		[ "F:/Coding/ProjektQuiz/src/question.cpp", "MU", null ],
+		[ "F:/Coding/ProjektQuiz/src/quizmanager.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
