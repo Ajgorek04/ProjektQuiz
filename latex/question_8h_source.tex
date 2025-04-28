@@ -1,0 +1,35 @@
+\doxysection{question.\+h}
+\hypertarget{question_8h_source}{}\label{question_8h_source}\index{src/question.h@{src/question.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ QUESTION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ QUESTION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QStringList>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_question}{Question}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_question_a2e1167d0407c7530b4f7a7492d0050d0}{Question}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_question_a2e1167d0407c7530b4f7a7492d0050d0}{Question}}(\textcolor{keyword}{const}\ QString\&\ text,\ \textcolor{keyword}{const}\ QStringList\&\ answers,\ \textcolor{keyword}{const}\ QChar\&\ correctAnswer,\ \textcolor{keyword}{const}\ QString\&\ category);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{class_question_a7dce5d583ba08ebd5c8a6544e71dbb0a}{getText}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_question_a2ecfbdbdcc7c49cc782e19ac7ebac52b}{getAnswers}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ QChar\ \mbox{\hyperlink{class_question_a0723c4f1d7fa25d1e7ef869fce3bf564}{getCorrectAnswer}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ QString\ \mbox{\hyperlink{class_question_a5e75f84c965825e7d06804aae437d40b}{getCategory}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ QString\ text;\ }
+\DoxyCodeLine{00053\ \ \ \ \ QStringList\ answers;\ }
+\DoxyCodeLine{00054\ \ \ \ \ QChar\ correctAnswer;\ }
+\DoxyCodeLine{00055\ \ \ \ \ QString\ category;\ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ QUESTION\_H}}
+
+\end{DoxyCode}

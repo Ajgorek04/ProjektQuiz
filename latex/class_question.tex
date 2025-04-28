@@ -1,0 +1,152 @@
+\doxysection{Question Class Reference}
+\hypertarget{class_question}{}\label{class_question}\index{Question@{Question}}
+
+
+Klasa reprezentująca pojedyncze pytanie w quizie.  
+
+
+
+
+{\ttfamily \#include $<$question.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_question_a0f02df765d33b1edd6e859dd158268b8}\label{class_question_a0f02df765d33b1edd6e859dd158268b8} 
+{\bfseries Question} (string q, string a, string b, string c, string d, char correct, string cat)
+\item 
+\Hypertarget{class_question_aa71332bc230956e9f35f5dc99f603fbc}\label{class_question_aa71332bc230956e9f35f5dc99f603fbc} 
+string {\bfseries to\+CSV} () const
+\item 
+\Hypertarget{class_question_a2e1167d0407c7530b4f7a7492d0050d0}\label{class_question_a2e1167d0407c7530b4f7a7492d0050d0} 
+{\bfseries Question} ()
+\begin{DoxyCompactList}\small\item\em Domyślny konstruktor klasy \doxylink{class_question}{Question}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_question_ace2aeed19bf61df012eff1c02ce779d4}{Question}} (const QString \&text, const QString\+List \&answers, const QChar \&correct\+Answer, const QString \&category)
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzący pytanie z podanym tekstem, odpowiedziami, poprawną odpowiedzią i kategorią. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_question_a7dce5d583ba08ebd5c8a6544e71dbb0a}{get\+Text}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca treść pytania. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_question_a2ecfbdbdcc7c49cc782e19ac7ebac52b}{get\+Answers}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca listę możliwych odpowiedzi. \end{DoxyCompactList}\item 
+QChar \mbox{\hyperlink{class_question_a0723c4f1d7fa25d1e7ef869fce3bf564}{get\+Correct\+Answer}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca poprawną odpowiedź. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_question_a5e75f84c965825e7d06804aae437d40b}{get\+Category}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca kategorię pytania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_question_a1dca047bb82414a79ae824335412c18b}\label{class_question_a1dca047bb82414a79ae824335412c18b} 
+static \mbox{\hyperlink{class_question}{Question}} {\bfseries from\+CSV} (const string \&line)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_question_af9cc0a7133ecb765c39305e3009336bd}\label{class_question_af9cc0a7133ecb765c39305e3009336bd} 
+string {\bfseries question}
+\item 
+\Hypertarget{class_question_a3d8a036a894de11f7455cb5752017cce}\label{class_question_a3d8a036a894de11f7455cb5752017cce} 
+string {\bfseries answerA}
+\item 
+\Hypertarget{class_question_aa88de2ece431a8c231be1665c2a07b61}\label{class_question_aa88de2ece431a8c231be1665c2a07b61} 
+string {\bfseries answerB}
+\item 
+\Hypertarget{class_question_a2a639067ed433693c6a3786e0900e0b8}\label{class_question_a2a639067ed433693c6a3786e0900e0b8} 
+string {\bfseries answerC}
+\item 
+\Hypertarget{class_question_aa3cd721e5f0f613309ba3409bad7b611}\label{class_question_aa3cd721e5f0f613309ba3409bad7b611} 
+string {\bfseries answerD}
+\item 
+\Hypertarget{class_question_a2c73059449056b4e0aba4a0c34cf35cd}\label{class_question_a2c73059449056b4e0aba4a0c34cf35cd} 
+char {\bfseries correct\+Answer}
+\item 
+\Hypertarget{class_question_aae943d12c05eba410dc2391bbf58b4d5}\label{class_question_aae943d12c05eba410dc2391bbf58b4d5} 
+string {\bfseries category}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pojedyncze pytanie w quizie. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_question_ace2aeed19bf61df012eff1c02ce779d4}\index{Question@{Question}!Question@{Question}}
+\index{Question@{Question}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{Question()}{Question()}}
+{\footnotesize\ttfamily \label{class_question_ace2aeed19bf61df012eff1c02ce779d4} 
+Question\+::\+Question (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{, }\item[{const QString\+List \&}]{answers}{, }\item[{const QChar \&}]{correct\+Answer}{, }\item[{const QString \&}]{category}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor tworzący pytanie z podanym tekstem, odpowiedziami, poprawną odpowiedzią i kategorią. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Treść pytania. \\
+\hline
+{\em answers} & Lista możliwych odpowiedzi. \\
+\hline
+{\em correct\+Answer} & Poprawna odpowiedź (\textquotesingle{}A\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}C\textquotesingle{} lub \textquotesingle{}D\textquotesingle{}). \\
+\hline
+{\em category} & Kategoria pytania. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_question_a2ecfbdbdcc7c49cc782e19ac7ebac52b}\index{Question@{Question}!getAnswers@{getAnswers}}
+\index{getAnswers@{getAnswers}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getAnswers()}{getAnswers()}}
+{\footnotesize\ttfamily \label{class_question_a2ecfbdbdcc7c49cc782e19ac7ebac52b} 
+QString\+List Question\+::get\+Answers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca listę możliwych odpowiedzi. 
+
+\begin{DoxyReturn}{Returns}
+Lista odpowiedzi. 
+\end{DoxyReturn}
+\Hypertarget{class_question_a5e75f84c965825e7d06804aae437d40b}\index{Question@{Question}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily \label{class_question_a5e75f84c965825e7d06804aae437d40b} 
+QString Question\+::get\+Category (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca kategorię pytania. 
+
+\begin{DoxyReturn}{Returns}
+Kategoria pytania. 
+\end{DoxyReturn}
+\Hypertarget{class_question_a0723c4f1d7fa25d1e7ef869fce3bf564}\index{Question@{Question}!getCorrectAnswer@{getCorrectAnswer}}
+\index{getCorrectAnswer@{getCorrectAnswer}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getCorrectAnswer()}{getCorrectAnswer()}}
+{\footnotesize\ttfamily \label{class_question_a0723c4f1d7fa25d1e7ef869fce3bf564} 
+QChar Question\+::get\+Correct\+Answer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca poprawną odpowiedź. 
+
+\begin{DoxyReturn}{Returns}
+Poprawna odpowiedź jako znak. 
+\end{DoxyReturn}
+\Hypertarget{class_question_a7dce5d583ba08ebd5c8a6544e71dbb0a}\index{Question@{Question}!getText@{getText}}
+\index{getText@{getText}!Question@{Question}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily \label{class_question_a7dce5d583ba08ebd5c8a6544e71dbb0a} 
+QString Question\+::get\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca treść pytania. 
+
+\begin{DoxyReturn}{Returns}
+Tekst pytania. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Data\+Base\+Editor/main.\+cpp\item 
+src/question.\+h\item 
+src/question.\+cpp\end{DoxyCompactItemize}

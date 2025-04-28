@@ -1,0 +1,503 @@
+\doxysection{ui\+\_\+mainwindow.\+h}
+\hypertarget{build_2_quiz_game__autogen_2include_2ui__mainwindow_8h_source}{}\label{build_2_quiz_game__autogen_2include_2ui__mainwindow_8h_source}\index{build/QuizGame\_autogen/include/ui\_mainwindow.h@{build/QuizGame\_autogen/include/ui\_mainwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'mainwindow.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.9.0}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QFormLayout>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QListWidget>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QRadioButton>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QSplitter>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStackedWidget>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStatusBar>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTextBrowser>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___main_window}{Ui\_MainWindow}}}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ QWidget\ *centralwidget;}
+\DoxyCodeLine{00033\ \ \ \ \ QStackedWidget\ *stackedWidget;}
+\DoxyCodeLine{00034\ \ \ \ \ QWidget\ *page;}
+\DoxyCodeLine{00035\ \ \ \ \ QSplitter\ *splitter;}
+\DoxyCodeLine{00036\ \ \ \ \ QPushButton\ *start;}
+\DoxyCodeLine{00037\ \ \ \ \ QPushButton\ *rules;}
+\DoxyCodeLine{00038\ \ \ \ \ QPushButton\ *category;}
+\DoxyCodeLine{00039\ \ \ \ \ QPushButton\ *exit;}
+\DoxyCodeLine{00040\ \ \ \ \ QLabel\ *label;}
+\DoxyCodeLine{00041\ \ \ \ \ QWidget\ *page2;}
+\DoxyCodeLine{00042\ \ \ \ \ QLabel\ *label\_2;}
+\DoxyCodeLine{00043\ \ \ \ \ QWidget\ *horizontalLayoutWidget;}
+\DoxyCodeLine{00044\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00045\ \ \ \ \ QPushButton\ *back\_button3;}
+\DoxyCodeLine{00046\ \ \ \ \ QPushButton\ *nextQuestion;}
+\DoxyCodeLine{00047\ \ \ \ \ QWidget\ *formLayoutWidget;}
+\DoxyCodeLine{00048\ \ \ \ \ QFormLayout\ *formLayout;}
+\DoxyCodeLine{00049\ \ \ \ \ QRadioButton\ *radioButton1;}
+\DoxyCodeLine{00050\ \ \ \ \ QRadioButton\ *radioButton2;}
+\DoxyCodeLine{00051\ \ \ \ \ QRadioButton\ *radioButton3;}
+\DoxyCodeLine{00052\ \ \ \ \ QRadioButton\ *radioButton4;}
+\DoxyCodeLine{00053\ \ \ \ \ QWidget\ *page3;}
+\DoxyCodeLine{00054\ \ \ \ \ QListWidget\ *listWidget\_category;}
+\DoxyCodeLine{00055\ \ \ \ \ QPushButton\ *back\_button;}
+\DoxyCodeLine{00056\ \ \ \ \ QLabel\ *label\_4;}
+\DoxyCodeLine{00057\ \ \ \ \ QWidget\ *page4;}
+\DoxyCodeLine{00058\ \ \ \ \ QLabel\ *label\_7;}
+\DoxyCodeLine{00059\ \ \ \ \ QTextBrowser\ *textBrowser;}
+\DoxyCodeLine{00060\ \ \ \ \ QPushButton\ *back\_button2;}
+\DoxyCodeLine{00061\ \ \ \ \ QStatusBar\ *statusbar;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QMainWindow\ *\mbox{\hyperlink{class_main_window}{MainWindow}})}
+\DoxyCodeLine{00064\ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_main_window}{MainWindow}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}-\/>setObjectName(\textcolor{stringliteral}{"{}MainWindow"{}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}-\/>resize(812,\ 631);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}-\/>setAutoFillBackground(\textcolor{keyword}{false});}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ centralwidget\ =\ \textcolor{keyword}{new}\ QWidget(\mbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ centralwidget-\/>setObjectName(\textcolor{stringliteral}{"{}centralwidget"{}});}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ stackedWidget\ =\ \textcolor{keyword}{new}\ QStackedWidget(centralwidget);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ stackedWidget-\/>setObjectName(\textcolor{stringliteral}{"{}stackedWidget"{}});}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ stackedWidget-\/>setGeometry(QRect(-\/10,\ 0,\ 811,\ 631));}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ stackedWidget-\/>setFrameShape(QFrame::Shape::NoFrame);}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ page\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ page-\/>setObjectName(\textcolor{stringliteral}{"{}page"{}});}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ splitter\ =\ \textcolor{keyword}{new}\ QSplitter(page);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ splitter-\/>setObjectName(\textcolor{stringliteral}{"{}splitter"{}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ splitter-\/>setGeometry(QRect(260,\ 350,\ 271,\ 211));}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ splitter-\/>setOrientation(Qt::Orientation::Vertical);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ start\ =\ \textcolor{keyword}{new}\ QPushButton(splitter);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ start-\/>setObjectName(\textcolor{stringliteral}{"{}start"{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ start-\/>setLayoutDirection(Qt::LayoutDirection::LeftToRight);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ start-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00085\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00086\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00087\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00088\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#4CAF50;\(\backslash\)n"{}}}
+\DoxyCodeLine{00089\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00090\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00091\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00092\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00093\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00094\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00095\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#45a049;\(\backslash\)n"{}}}
+\DoxyCodeLine{00096\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ splitter-\/>addWidget(start);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ rules\ =\ \textcolor{keyword}{new}\ QPushButton(splitter);}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ rules-\/>setObjectName(\textcolor{stringliteral}{"{}rules"{}});}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ rules-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00101\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00102\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00103\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00104\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#0099cc;\(\backslash\)n"{}}}
+\DoxyCodeLine{00105\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00106\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00107\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00108\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00109\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00110\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00111\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \ \#007399\ ;\(\backslash\)n"{}}}
+\DoxyCodeLine{00112\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ splitter-\/>addWidget(rules);}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ category\ =\ \textcolor{keyword}{new}\ QPushButton(splitter);}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ category-\/>setObjectName(\textcolor{stringliteral}{"{}category"{}});}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ category-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00117\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00118\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00119\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00120\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#ffcc66;\(\backslash\)n"{}}}
+\DoxyCodeLine{00121\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00122\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00123\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00124\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00125\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00126\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00127\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \ \ \#ffaa00\ ;\(\backslash\)n"{}}}
+\DoxyCodeLine{00128\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ splitter-\/>addWidget(category);}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ exit\ =\ \textcolor{keyword}{new}\ QPushButton(splitter);}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ exit-\/>setObjectName(\textcolor{stringliteral}{"{}exit"{}});}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ exit-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00133\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00134\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00135\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00136\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \ \#737373\ ;\(\backslash\)n"{}}}
+\DoxyCodeLine{00137\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00138\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00139\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00140\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00141\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00142\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00143\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#595959;\(\backslash\)n"{}}}
+\DoxyCodeLine{00144\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ splitter-\/>addWidget(exit);}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ label\ =\ \textcolor{keyword}{new}\ QLabel(page);}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ label-\/>setObjectName(\textcolor{stringliteral}{"{}label"{}});}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ label-\/>setGeometry(QRect(150,\ 10,\ 511,\ 71));}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ QFont\ font;}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ font.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Segoe\ Script"{}})\});}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ font.setBold(\textcolor{keyword}{true});}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ label-\/>setFont(font);}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ label-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}color:\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00154\ \textcolor{stringliteral}{"{}font-\/size:\ 36px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00155\ \textcolor{stringliteral}{"{}font-\/weight:\ bold;"{}}));}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ label-\/>setFrameShape(QFrame::Shape::NoFrame);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ label-\/>setTextFormat(Qt::TextFormat::AutoText);}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ label-\/>setScaledContents(\textcolor{keyword}{false});}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ label-\/>setAlignment(Qt::AlignmentFlag::AlignCenter);}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(page);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ page2\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ page2-\/>setObjectName(\textcolor{stringliteral}{"{}page2"{}});}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ label\_2\ =\ \textcolor{keyword}{new}\ QLabel(page2);}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ label\_2-\/>setObjectName(\textcolor{stringliteral}{"{}label\_2"{}});}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ label\_2-\/>setGeometry(QRect(30,\ 20,\ 741,\ 51));}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ label\_2-\/>setFont(font);}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ label\_2-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}color:\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00168\ \textcolor{stringliteral}{"{}font-\/size:\ 36px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00169\ \textcolor{stringliteral}{"{}font-\/weight:\ bold;"{}}));}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ label\_2-\/>setFrameShape(QFrame::Shape::NoFrame);}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ label\_2-\/>setTextFormat(Qt::TextFormat::AutoText);}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ label\_2-\/>setScaledContents(\textcolor{keyword}{false});}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ label\_2-\/>setAlignment(Qt::AlignmentFlag::AlignCenter);}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ horizontalLayoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(page2);}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ horizontalLayoutWidget-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayoutWidget"{}});}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ horizontalLayoutWidget-\/>setGeometry(QRect(70,\ 550,\ 703,\ 61));}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout(horizontalLayoutWidget);}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ back\_button3\ =\ \textcolor{keyword}{new}\ QPushButton(horizontalLayoutWidget);}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ back\_button3-\/>setObjectName(\textcolor{stringliteral}{"{}back\_button3"{}});}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ back\_button3-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00183\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00184\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00185\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00186\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \ \#737373\ ;\(\backslash\)n"{}}}
+\DoxyCodeLine{00187\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00188\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00189\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00190\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00191\ \textcolor{stringliteral}{"{}\ \ \ margin-\/right:\ 100px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00192\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00193\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00194\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#595959;\(\backslash\)n"{}}}
+\DoxyCodeLine{00195\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(back\_button3);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ nextQuestion\ =\ \textcolor{keyword}{new}\ QPushButton(horizontalLayoutWidget);}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ nextQuestion-\/>setObjectName(\textcolor{stringliteral}{"{}nextQuestion"{}});}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ nextQuestion-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00202\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00203\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00204\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00205\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \ \#737373\ ;\(\backslash\)n"{}}}
+\DoxyCodeLine{00206\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00207\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00208\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00209\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00210\ \textcolor{stringliteral}{"{}\ \ \ margin-\/left:\ 100px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00211\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00212\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00213\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#595959;\(\backslash\)n"{}}}
+\DoxyCodeLine{00214\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(nextQuestion);}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ formLayoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(page2);}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ formLayoutWidget-\/>setObjectName(\textcolor{stringliteral}{"{}formLayoutWidget"{}});}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ formLayoutWidget-\/>setGeometry(QRect(190,\ 360,\ 448,\ 166));}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ formLayout\ =\ \textcolor{keyword}{new}\ QFormLayout(formLayoutWidget);}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ formLayout-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout"{}});}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ formLayout-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ radioButton1\ =\ \textcolor{keyword}{new}\ QRadioButton(formLayoutWidget);}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ radioButton1-\/>setObjectName(\textcolor{stringliteral}{"{}radioButton1"{}});}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ radioButton1-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QRadioButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00227\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 18px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00228\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 15px\ 50px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00229\ \textcolor{stringliteral}{"{}\ \ \ \ margin:\ 5px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00230\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#388E3C;\(\backslash\)n"{}}}
+\DoxyCodeLine{00231\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00232\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00233\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 2px\ solid\ \#388E3C;\(\backslash\)n"{}}}
+\DoxyCodeLine{00234\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00235\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00236\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00237\ \textcolor{stringliteral}{"{}QRadioButton::indicator\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00238\ \textcolor{stringliteral}{"{}\ \ \ \ width:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00239\ \textcolor{stringliteral}{"{}\ \ \ \ height:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00240\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00241\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00242\ \textcolor{stringliteral}{"{}QRadioButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00243\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#4CAF50;\(\backslash\)n"{}}}
+\DoxyCodeLine{00244\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#4CAF50;\(\backslash\)n"{}}}
+\DoxyCodeLine{00245\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00246\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00247\ \textcolor{stringliteral}{"{}QRadioButton\#radioButton1:checked\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00248\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#2E7D32;\(\backslash\)n"{}}}
+\DoxyCodeLine{00249\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#2E7D32;\(\backslash\)n"{}}}
+\DoxyCodeLine{00250\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(0,\ QFormLayout::ItemRole::LabelRole,\ radioButton1);}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ radioButton2\ =\ \textcolor{keyword}{new}\ QRadioButton(formLayoutWidget);}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ radioButton2-\/>setObjectName(\textcolor{stringliteral}{"{}radioButton2"{}});}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ radioButton2-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QRadioButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00257\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 18px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00258\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 15px\ 50px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00259\ \textcolor{stringliteral}{"{}\ \ \ \ margin:\ 5px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00260\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#D32F2F;\(\backslash\)n"{}}}
+\DoxyCodeLine{00261\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00262\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00263\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 2px\ solid\ \#D32F2F;\(\backslash\)n"{}}}
+\DoxyCodeLine{00264\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00265\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00266\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00267\ \textcolor{stringliteral}{"{}QRadioButton::indicator\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00268\ \textcolor{stringliteral}{"{}\ \ \ \ width:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00269\ \textcolor{stringliteral}{"{}\ \ \ \ height:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00270\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00271\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00272\ \textcolor{stringliteral}{"{}QRadioButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00273\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#F44336;\(\backslash\)n"{}}}
+\DoxyCodeLine{00274\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#F44336;\(\backslash\)n"{}}}
+\DoxyCodeLine{00275\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00276\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00277\ \textcolor{stringliteral}{"{}QRadioButton:checked\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00278\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#C62828;\(\backslash\)n"{}}}
+\DoxyCodeLine{00279\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#C62828;\(\backslash\)n"{}}}
+\DoxyCodeLine{00280\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(0,\ QFormLayout::ItemRole::FieldRole,\ radioButton2);}
+\DoxyCodeLine{00283\ }
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ radioButton3\ =\ \textcolor{keyword}{new}\ QRadioButton(formLayoutWidget);}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ radioButton3-\/>setObjectName(\textcolor{stringliteral}{"{}radioButton3"{}});}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ radioButton3-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QRadioButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00287\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 18px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00288\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 15px\ 50px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00289\ \textcolor{stringliteral}{"{}\ \ \ \ margin:\ 5px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00290\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#1976D2;\(\backslash\)n"{}}}
+\DoxyCodeLine{00291\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00292\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00293\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 2px\ solid\ \#1976D2;\(\backslash\)n"{}}}
+\DoxyCodeLine{00294\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00295\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00296\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00297\ \textcolor{stringliteral}{"{}QRadioButton::indicator\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00298\ \textcolor{stringliteral}{"{}\ \ \ \ width:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00299\ \textcolor{stringliteral}{"{}\ \ \ \ height:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00300\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00301\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00302\ \textcolor{stringliteral}{"{}QRadioButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00303\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#2196F3;\(\backslash\)n"{}}}
+\DoxyCodeLine{00304\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#2196F3;\(\backslash\)n"{}}}
+\DoxyCodeLine{00305\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00306\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00307\ \textcolor{stringliteral}{"{}QRadioButton:checked\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00308\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#1565C0;\(\backslash\)n"{}}}
+\DoxyCodeLine{00309\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#1565C0;\(\backslash\)n"{}}}
+\DoxyCodeLine{00310\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(1,\ QFormLayout::ItemRole::LabelRole,\ radioButton3);}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ radioButton4\ =\ \textcolor{keyword}{new}\ QRadioButton(formLayoutWidget);}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ radioButton4-\/>setObjectName(\textcolor{stringliteral}{"{}radioButton4"{}});}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ radioButton4-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QRadioButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00317\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 18px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00318\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 15px\ 50px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00319\ \textcolor{stringliteral}{"{}\ \ \ \ margin:\ 5px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00320\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#FF9800;\(\backslash\)n"{}}}
+\DoxyCodeLine{00321\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00322\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00323\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 2px\ solid\ \#FF9800;\(\backslash\)n"{}}}
+\DoxyCodeLine{00324\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00325\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00326\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00327\ \textcolor{stringliteral}{"{}QRadioButton::indicator\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00328\ \textcolor{stringliteral}{"{}\ \ \ \ width:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00329\ \textcolor{stringliteral}{"{}\ \ \ \ height:\ 0px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00330\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00331\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00332\ \textcolor{stringliteral}{"{}QRadioButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00333\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#FFB74D;\(\backslash\)n"{}}}
+\DoxyCodeLine{00334\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#FFB74D;\(\backslash\)n"{}}}
+\DoxyCodeLine{00335\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00336\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00337\ \textcolor{stringliteral}{"{}QRadioButton:checked\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00338\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#FB8C00;\(\backslash\)n"{}}}
+\DoxyCodeLine{00339\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#FB8C00;\(\backslash\)n"{}}}
+\DoxyCodeLine{00340\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(1,\ QFormLayout::ItemRole::FieldRole,\ radioButton4);}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(page2);}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ page3\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ page3-\/>setObjectName(\textcolor{stringliteral}{"{}page3"{}});}
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ listWidget\_category\ =\ \textcolor{keyword}{new}\ QListWidget(page3);}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ listWidget\_category-\/>setObjectName(\textcolor{stringliteral}{"{}listWidget\_category"{}});}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ listWidget\_category-\/>setGeometry(QRect(270,\ 70,\ 261,\ 441));}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ listWidget\_category-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background:\ transparent;\(\backslash\)n"{}}}
+\DoxyCodeLine{00351\ \textcolor{stringliteral}{"{}color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00352\ \textcolor{stringliteral}{"{}text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00353\ \textcolor{stringliteral}{"{}font-\/size:\ 24px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00354\ \textcolor{stringliteral}{"{}border:\ 1px\ solid\ black;\(\backslash\)n"{}}}
+\DoxyCodeLine{00355\ \textcolor{stringliteral}{"{}border-\/radius:\ 10px;"{}}));}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ listWidget\_category-\/>setFrameShape(QFrame::Shape::NoFrame);}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ back\_button\ =\ \textcolor{keyword}{new}\ QPushButton(page3);}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ back\_button-\/>setObjectName(\textcolor{stringliteral}{"{}back\_button"{}});}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ back\_button-\/>setGeometry(QRect(280,\ 530,\ 241,\ 41));}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ back\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00361\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00362\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00363\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00364\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00365\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 22px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00366\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00367\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00368\ \textcolor{stringliteral}{"{}\ \ \ background:\ transparent;\(\backslash\)n"{}}}
+\DoxyCodeLine{00369\ \textcolor{stringliteral}{"{}\ \ \ border:\ 1px\ solid\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00370\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00371\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00372\ \textcolor{stringliteral}{"{}\ \ \ background-\/color:\ rgba(0,\ 0,\ 0,\ 0.1);\(\backslash\)n"{}}}
+\DoxyCodeLine{00373\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ label\_4\ =\ \textcolor{keyword}{new}\ QLabel(page3);}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ label\_4-\/>setObjectName(\textcolor{stringliteral}{"{}label\_4"{}});}
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ label\_4-\/>setGeometry(QRect(10,\ 20,\ 781,\ 31));}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ label\_4-\/>setFont(font);}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ label\_4-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}color:\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00379\ \textcolor{stringliteral}{"{}font-\/size:\ 36px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00380\ \textcolor{stringliteral}{"{}font-\/weight:\ bold;"{}}));}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ label\_4-\/>setFrameShape(QFrame::Shape::NoFrame);}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ label\_4-\/>setTextFormat(Qt::TextFormat::AutoText);}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ label\_4-\/>setScaledContents(\textcolor{keyword}{false});}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ label\_4-\/>setAlignment(Qt::AlignmentFlag::AlignCenter);}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(page3);}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ page4\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ page4-\/>setObjectName(\textcolor{stringliteral}{"{}page4"{}});}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ page4-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}border:\ none;"{}}));}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ label\_7\ =\ \textcolor{keyword}{new}\ QLabel(page4);}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ label\_7-\/>setObjectName(\textcolor{stringliteral}{"{}label\_7"{}});}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ label\_7-\/>setGeometry(QRect(10,\ 10,\ 781,\ 31));}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ label\_7-\/>setFont(font);}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ label\_7-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}color:\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00394\ \textcolor{stringliteral}{"{}font-\/size:\ 36px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00395\ \textcolor{stringliteral}{"{}font-\/weight:\ bold;"{}}));}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ label\_7-\/>setFrameShape(QFrame::Shape::NoFrame);}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ label\_7-\/>setTextFormat(Qt::TextFormat::AutoText);}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ label\_7-\/>setScaledContents(\textcolor{keyword}{false});}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ label\_7-\/>setAlignment(Qt::AlignmentFlag::AlignCenter);}
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ textBrowser\ =\ \textcolor{keyword}{new}\ QTextBrowser(page4);}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ textBrowser-\/>setObjectName(\textcolor{stringliteral}{"{}textBrowser"{}});}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ textBrowser-\/>setGeometry(QRect(30,\ 50,\ 741,\ 481));}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ QFont\ font1;}
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ font1.setPointSize(16);}
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ textBrowser-\/>setFont(font1);}
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ textBrowser-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background:transparent;\(\backslash\)n"{}}}
+\DoxyCodeLine{00407\ \textcolor{stringliteral}{"{}color:\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00408\ \textcolor{stringliteral}{"{}background-\/color:\ rgba(0,\ 0,\ 0,\ 0.1);\(\backslash\)n"{}}}
+\DoxyCodeLine{00409\ \textcolor{stringliteral}{"{}border-\/radius:\ 10px;"{}}));}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ back\_button2\ =\ \textcolor{keyword}{new}\ QPushButton(page4);}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ back\_button2-\/>setObjectName(\textcolor{stringliteral}{"{}back\_button2"{}});}
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ back\_button2-\/>setGeometry(QRect(290,\ 550,\ 241,\ 41));}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ back\_button2-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00414\ \textcolor{stringliteral}{"{}\ \ \ \ text-\/align:\ center;\(\backslash\)n"{}}}
+\DoxyCodeLine{00415\ \textcolor{stringliteral}{"{}\ \ \ \ vertical-\/align:\ middle;\(\backslash\)n"{}}}
+\DoxyCodeLine{00416\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00417\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00418\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 22px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00419\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00420\ \textcolor{stringliteral}{"{}\ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00421\ \textcolor{stringliteral}{"{}\ \ \ background:\ transparent;\(\backslash\)n"{}}}
+\DoxyCodeLine{00422\ \textcolor{stringliteral}{"{}\ \ \ border:\ 1px\ solid\ \#fff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00423\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00424\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00425\ \textcolor{stringliteral}{"{}\ \ \ background-\/color:\ rgba(0,\ 0,\ 0,\ 0.1);\(\backslash\)n"{}}}
+\DoxyCodeLine{00426\ \textcolor{stringliteral}{"{}\}"{}}));}
+\DoxyCodeLine{00427\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(page4);}
+\DoxyCodeLine{00428\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}-\/>setCentralWidget(centralwidget);}
+\DoxyCodeLine{00429\ \ \ \ \ \ \ \ \ statusbar\ =\ \textcolor{keyword}{new}\ QStatusBar(\mbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00430\ \ \ \ \ \ \ \ \ statusbar-\/>setObjectName(\textcolor{stringliteral}{"{}statusbar"{}});}
+\DoxyCodeLine{00431\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}-\/>setStatusBar(statusbar);}
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ stackedWidget-\/>setCurrentIndex(1);}
+\DoxyCodeLine{00436\ }
+\DoxyCodeLine{00437\ }
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00439\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00440\ }
+\DoxyCodeLine{00441\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QMainWindow\ *\mbox{\hyperlink{class_main_window}{MainWindow}})}
+\DoxyCodeLine{00442\ \ \ \ \ \{}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ start-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}START"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ rules-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}ZASADY"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ category-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}KATEGORIE"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ exit-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}WYJ\(\backslash\)305\(\backslash\)232CIE"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ label-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}QUIZ\ GAME"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ label\_2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}QUIZ\ GAME"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ back\_button3-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}POWR\(\backslash\)303\(\backslash\)223T\ DO\ MENU"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ nextQuestion-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}NAST\(\backslash\)304\(\backslash\)230PNE\ PYTANIE"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ radioButton1-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}RadioButton"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ radioButton2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}RadioButton"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ radioButton3-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}RadioButton"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ radioButton4-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}RadioButton"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ back\_button-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}POWR\(\backslash\)303\(\backslash\)223T"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ label\_4-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}KATEGORIE"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ label\_7-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}ZASADY\ GRY"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ textBrowser-\/>setHtml(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}<!DOCTYPE\ HTML\ PUBLIC\ \(\backslash\)"{}-\///W3C//DTD\ HTML\ 4.0//EN\(\backslash\)"{}\ \(\backslash\)"{}http://www.w3.org/TR/REC-\/html40/strict.dtd\(\backslash\)"{}>\(\backslash\)n"{}}}
+\DoxyCodeLine{00460\ \textcolor{stringliteral}{"{}<html><head><meta\ name=\(\backslash\)"{}qrichtext\(\backslash\)"{}\ content=\(\backslash\)"{}1\(\backslash\)"{}\ /><meta\ charset=\(\backslash\)"{}utf-\/8\(\backslash\)"{}\ /><style\ type=\(\backslash\)"{}text/css\(\backslash\)"{}>\(\backslash\)n"{}}}
+\DoxyCodeLine{00461\ \textcolor{stringliteral}{"{}p,\ li\ \{\ white-\/space:\ pre-\/wrap;\ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00462\ \textcolor{stringliteral}{"{}hr\ \{\ height:\ 1px;\ border-\/width:\ 0;\ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00463\ \textcolor{stringliteral}{"{}li.unchecked::marker\ \{\ content:\ \(\backslash\)"{}\(\backslash\)\(\backslash\)2610\(\backslash\)"{};\ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00464\ \textcolor{stringliteral}{"{}li.checked::marker\ \{\ content:\ \(\backslash\)"{}\(\backslash\)\(\backslash\)2612\(\backslash\)"{};\ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00465\ \textcolor{stringliteral}{"{}</style></head><body\ style=\(\backslash\)"{}\ font-\/family:'Segoe\ UI';\ font-\/size:16pt;\ font-\/weight:400;\ font-\/style:normal;\(\backslash\)"{}>\(\backslash\)n"{}}}
+\DoxyCodeLine{00466\ \textcolor{stringliteral}{"{}<p\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\ font-\/weight:700;\(\backslash\)"{}>Wyb\(\backslash\)303\(\backslash\)263r\ kategorii</span><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}><br\ />Gracz\ wybiera\ jedn\(\backslash\)304\(\backslash\)205\ z\ dost\(\backslash\)304\(\backslash\)231pnych\ kategorii,\ takich\ jak:\ Auta,\ Jedzenie,\ Pa\(\backslash\)305\(\backslash\)204stwa,\ Muzyka\ itd.</span></p>\(\backslash\)n"{}}}
+\DoxyCodeLine{00467\ \textcolor{stringliteral}{"{}<p\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\ "{}}}
+\DoxyCodeLine{00468\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}font-\/weight:700;\(\backslash\)"{}>Rozpocz\(\backslash\)304\(\backslash\)231cie\ gry</span><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}><br\ />Po\ wybraniu\ kategorii\ rozpoczyna\ si\(\backslash\)304\(\backslash\)231\ quiz\ zawieraj\(\backslash\)304\(\backslash\)205cy\ pytania\ zwi\(\backslash\)304\(\backslash\)205zane\ z\ t\(\backslash\)304\(\backslash\)205\ kategori\(\backslash\)304\(\backslash\)205.</span></p>\(\backslash\)n"{}}}
+\DoxyCodeLine{00469\ \textcolor{stringliteral}{"{}<p\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\ font-\/weight:700;\(\backslash\)"{}>Odpowiadanie\ na\ pytania</span></p>\(\backslash\)n"{}}}
+\DoxyCodeLine{00470\ \textcolor{stringliteral}{"{}<ul\ style=\(\backslash\)"{}margin-\/top:\ 0px;\ margin-\/bottom:\ 0px;\ margin-\/left:\ 0px;\ margin-\/right:\ 0px;\ -\/qt-\/list-\/indent:\ 1;\(\backslash\)"{}>\(\backslash\)n"{}}}
+\DoxyCodeLine{00471\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Ka\(\backslash\)305\(\backslash\)274de\ pytanie\ ma\ kilka\ mo\(\backslash\)305\(\backslash\)274liwych\ odpowiedzi\ (jedna\ prawid\(\backslash\)305\(\backslash\)202owa).</li>\(\backslash\)n"{}}}
+\DoxyCodeLine{00472\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Gracz\ wybiera\ odpowied\(\backslash\)305\(\backslash\)272\ klikaj\(\backslash\)304\(\backslash\)205c\ w\ przycisk.</li>\(\backslash\)n"{}}}
+\DoxyCodeLine{00473\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}"{}}}
+\DoxyCodeLine{00474\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Po\ ka\(\backslash\)305\(\backslash\)274dej\ odpowiedzi\ gracz\ otrzymuje\ informacj\(\backslash\)304\(\backslash\)231,\ czy\ by\(\backslash\)305\(\backslash\)202a\ poprawna.</li></ul>\(\backslash\)n"{}}}
+\DoxyCodeLine{00475\ \textcolor{stringliteral}{"{}<p\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\ font-\/weight:700;\(\backslash\)"{}>Punktacja</span></p>\(\backslash\)n"{}}}
+\DoxyCodeLine{00476\ \textcolor{stringliteral}{"{}<ul\ style=\(\backslash\)"{}margin-\/top:\ 0px;\ margin-\/bottom:\ 0px;\ margin-\/left:\ 0px;\ margin-\/right:\ 0px;\ -\/qt-\/list-\/indent:\ 1;\(\backslash\)"{}>\(\backslash\)n"{}}}
+\DoxyCodeLine{00477\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Za\ ka\(\backslash\)305\(\backslash\)274d\(\backslash\)304\(\backslash\)205\ poprawn\(\backslash\)304\(\backslash\)205\ odpowied\(\backslash\)305\(\backslash\)272\ gracz\ otrzymuje\ 1\ punkt.</li>\(\backslash\)n"{}}}
+\DoxyCodeLine{00478\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Za\ z\(\backslash\)305\(\backslash\)202\(\backslash\)304\(\backslash\)205\ odpowied\(\backslash\)305\(\backslash\)272\ punkt\(\backslash\)303\(\backslash\)263w\ si\(\backslash\)304\(\backslash\)231\ nie\ traci,\ ale\ n"{}}}
+\DoxyCodeLine{00479\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ie\ s\(\backslash\)304\(\backslash\)205\ przyznawane.</li></ul>\(\backslash\)n"{}}}
+\DoxyCodeLine{00480\ \textcolor{stringliteral}{"{}<p\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\ font-\/weight:700;\(\backslash\)"{}>Zako\(\backslash\)305\(\backslash\)204czenie\ gry</span></p>\(\backslash\)n"{}}}
+\DoxyCodeLine{00481\ \textcolor{stringliteral}{"{}<ul\ style=\(\backslash\)"{}margin-\/top:\ 0px;\ margin-\/bottom:\ 0px;\ margin-\/left:\ 0px;\ margin-\/right:\ 0px;\ -\/qt-\/list-\/indent:\ 1;\(\backslash\)"{}>\(\backslash\)n"{}}}
+\DoxyCodeLine{00482\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Gra\ ko\(\backslash\)305\(\backslash\)204czy\ si\(\backslash\)304\(\backslash\)231\ po\ odpowiedzeniu\ na\ wszystkie\ pytania\ w\ wybranej\ kategorii.</li>\(\backslash\)n"{}}}
+\DoxyCodeLine{00483\ \textcolor{stringliteral}{"{}<li\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}>Na\ koniec\ gracz\ widzi\ sw\(\backslash\)303\(\backslash\)263j\ wynik\ i\ mo\(\backslash\)305\(\backslash\)274e\ wr\(\backslash\)303\(\backslash\)263ci\(\backslash\)304\(\backslash\)207\ do\ menu\ g\(\backslash\)305\(\backslash\)202\(\backslash\)303\(\backslash\)263wnego.</li></ul>\(\backslash\)n"{}}}
+\DoxyCodeLine{00484\ \textcolor{stringliteral}{"{}<p\ style=\(\backslash\)"{}\ margin-\/top:12px;\ margin-\/bottom:12px;\ margin-\/left:0px;\ margin-\/right:0px;\ -\/qt-\/block-\/indent:0;\ text-\/indent:0px;\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ fo"{}}}
+\DoxyCodeLine{00485\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}nt-\/size:11pt;\ font-\/weight:700;\(\backslash\)"{}>Wyj\(\backslash\)305\(\backslash\)233cie\ z\ gry</span><span\ style=\(\backslash\)"{}\ font-\/size:11pt;\(\backslash\)"{}><br\ />W\ ka\(\backslash\)305\(\backslash\)274dej\ chwili\ mo\(\backslash\)305\(\backslash\)274na\ wr\(\backslash\)303\(\backslash\)263ci\(\backslash\)304\(\backslash\)207\ do\ menu\ lub\ zako\(\backslash\)305\(\backslash\)204czy\(\backslash\)304\(\backslash\)207\ gr\(\backslash\)304\(\backslash\)231\ przyciskiem\ \&quot;WYJ\(\backslash\)305\(\backslash\)232CIE\&quot;.</span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ back\_button2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}POWR\(\backslash\)303\(\backslash\)223T"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00487\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00488\ }
+\DoxyCodeLine{00489\ \};}
+\DoxyCodeLine{00490\ }
+\DoxyCodeLine{00491\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00492\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_main_window}{MainWindow}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___main_window}{Ui\_MainWindow}}\ \{\};}
+\DoxyCodeLine{00493\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00495\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00496\ }
+\DoxyCodeLine{00497\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_MAINWINDOW\_H}}
+
+\end{DoxyCode}

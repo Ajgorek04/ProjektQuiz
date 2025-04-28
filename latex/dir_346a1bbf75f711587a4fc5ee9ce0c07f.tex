@@ -1,0 +1,86 @@
+\doxysection{Data\+Base\+Editor Directory Reference}
+\hypertarget{dir_346a1bbf75f711587a4fc5ee9ce0c07f}{}\label{dir_346a1bbf75f711587a4fc5ee9ce0c07f}\index{DataBaseEditor Directory Reference@{DataBaseEditor Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.MD_autotoc_md1}{}\doxysubsection{\texorpdfstring{Opis}{Opis}}\label{README.MD_autotoc_md1}
+Projekt jest edytorem pytań do quizu. Umożliwia zarządzanie pytaniami oraz kategoriami pytań w systemie. Pytania są przechowywane w plikach CSV, co ułatwia ich edycję i przechowywanie. Program pozwala na dodawanie, przeglądanie, usuwanie pytań, a także na dodawanie nowych kategorii.\hypertarget{README.MD_autotoc_md2}{}\doxysubsection{\texorpdfstring{Funkcje}{Funkcje}}\label{README.MD_autotoc_md2}
+
+\begin{DoxyItemize}
+\item {\bfseries{Dodawanie pytań}}\+: Umożliwia dodanie nowego pytania, wraz z odpowiedziami i poprawną odpowiedzią. Można również przypisać pytanie do istniejącej kategorii.
+\item {\bfseries{Usuwanie pytań}}\+: Umożliwia usunięcie pytania z bazy.
+\item {\bfseries{Przeglądanie pytań}}\+: Wyświetlanie listy wszystkich pytań w systemie.
+\item {\bfseries{Zarządzanie kategoriami}}\+: Dodawanie nowych kategorii oraz przeglądanie dostępnych kategorii.
+\item {\bfseries{Zapis i odczyt danych}}\+: Dane (pytania i kategorie) są zapisywane w plikach CSV, co pozwala na łatwe zarządzanie danymi oraz ich późniejsze wykorzystanie.
+\end{DoxyItemize}\hypertarget{README.MD_autotoc_md3}{}\doxysubsection{\texorpdfstring{Instalacja}{Instalacja}}\label{README.MD_autotoc_md3}
+Aby uruchomić projekt na swoim komputerze, wystarczy wykonać poniższe kroki\+:
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Sklonuj repozytorium}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/TwojeRepozytorium/QuizEditor.git}
+
+\end{DoxyCode}
+
+\item \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Zbuduj projekt\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+:
+
+Jeśli używasz kompilatora C++, skorzystaj z poniższego polecenia\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{g++\ -\/o\ quiz\_editor\ main.cpp}
+
+\end{DoxyCode}
+
+\item {\bfseries{Uruchom program}}\+: Po zbudowaniu programu uruchom go poleceniem\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./quiz\_editor}
+
+\end{DoxyCode}
+ Struktura katalogów main.\+cpp -\/ Główny plik programu z logiką edytora pytań.
+\end{DoxyEnumerate}
+
+../questions.csv -\/ Plik, w którym przechowywane są pytania w formacie CSV.
+
+../categories.csv -\/ Plik, w którym przechowywane są kategorie pytań.
+
+{\bfseries{Jak korzystać z programu?}} Po uruchomieniu programu, użytkownik ma do dyspozycji następujące opcje\+:
+
+
+\begin{DoxyEnumerate}
+\item Przejrzyj aktualną listę pytań\+: Wyświetlenie wszystkich pytań zapisanych w systemie.
+\item Dodaj nowe pytanie\+: Możliwość dodania nowego pytania do bazy, z odpowiedziami i kategorią.
+\item Usuń pytanie\+: Usunięcie wybranego pytania z bazy.
+\item Dodaj nową kategorię\+: Dodanie nowej kategorii pytań.
+\item Przeglądaj kategorie\+: Wyświetlanie listy dostępnych kategorii.
+\end{DoxyEnumerate}
+
+Program zapisuje wszystkie dane w plikach CSV, dzięki czemu dane mogą być łatwo edytowane w edytorze tekstowym lub importowane do innych aplikacji.
+
+{\bfseries{Przykład działania programu}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{==========\ EDYTOR\ PYTAN\ DO\ QUIZU\ ==========}
+\DoxyCodeLine{1.\ Przejrzyj\ aktualną\ listę\ pytań}
+\DoxyCodeLine{2.\ Dodaj\ nowe\ pytanie}
+\DoxyCodeLine{3.\ Usuń\ pytanie}
+\DoxyCodeLine{4.\ Dodaj\ nową\ kategorię}
+\DoxyCodeLine{5.\ Przeglądaj\ kategorie}
+\DoxyCodeLine{6.\ Zakończ\ program}
+\DoxyCodeLine{}
+\DoxyCodeLine{Wybierz\ co\ chcesz\ zrobić:\ 1}
+\DoxyCodeLine{Lista\ pytań:}
+\DoxyCodeLine{1.\ Jakie\ jest\ stolica\ Polski?}
+\DoxyCodeLine{A:\ Warszawa}
+\DoxyCodeLine{B:\ Kraków}
+\DoxyCodeLine{C:\ Poznań}
+\DoxyCodeLine{D:\ Gniezno}
+\DoxyCodeLine{Poprawna\ odpowiedź:\ A}
+\DoxyCodeLine{Kategoria:\ Geografia}
+
+\end{DoxyCode}
+ 

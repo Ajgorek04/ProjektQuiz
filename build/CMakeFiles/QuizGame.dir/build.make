@@ -77,9 +77,7 @@ QuizGame_autogen/timestamp: CMakeFiles/QuizGame.dir/compiler_depend.ts
 
 QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: F:/Coding/ProjektQuiz/Qt/QuizGame/resource.qrc
 QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: CMakeFiles/QuizGame_autogen.dir/AutoRcc_resource_EWIEGA46WW_Info.json
-QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: F:/Coding/ProjektQuiz/Qt/QuizGame/categories.csv
 QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: F:/Coding/ProjektQuiz/Qt/QuizGame/images/background.jpg
-QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: F:/Coding/ProjektQuiz/Qt/QuizGame/questions.csv
 QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: C:/Qt/6.9.0/mingw_64/bin/rcc.exe
 QuizGame_autogen/EWIEGA46WW/qrc_resource.cpp: C:/Qt/6.9.0/mingw_64/bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=F:\Coding\ProjektQuiz\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resource.qrc"
