@@ -144,13 +144,51 @@ void MainWindow::on_button_next_clicked()
     }
 
     if (currentRound > totalRounds) {
-        // Koniec gry
         ui->stackedWidget->setCurrentWidget(ui->page_result);
-        ui->label_result->setText(QString("Koniec gry!\nTwój wynik: %1 / %2").arg(correctAnswers).arg(totalRounds * totalPlayers));
+
+        if (totalPlayers == 1) {
+            // Single player
+            ui->label_result->setText(QString("Koniec gry!\nTwój wynik: %1 / %2").arg(correctAnswers).arg(totalRounds));
+        } else {
+            // Multiplayer - pokaz ranking
+            QString rankingText = "🏆 Wyniki:\n\n";
+
+            // Przygotuj listę (gracz, punkty)
+            QVector<QPair<int, int>> results; // <graczIndex, punkty>
+
+            for (int i = 0; i < playerScores.size(); ++i) {
+                results.append(qMakePair(i, playerScores[i]));
+            }
+
+            // Sortuj malejąco po punktach
+            std::sort(results.begin(), results.end(), [](const QPair<int, int>& a, const QPair<int, int>& b) {
+                return a.second > b.second;
+            });
+
+            // Wypisz graczy z miejscami
+            for (int i = 0; i < results.size(); ++i) {
+                QString medal;
+                if (i == 0) medal = "🥇";
+                else if (i == 1) medal = "🥈";
+                else if (i == 2) medal = "🥉";
+                else medal = "";
+
+                int playerNumber = results[i].first + 1; // bo indeks 0-based
+                int points = results[i].second;
+
+                rankingText += QString("%1 Gracz %2: %3 punktów\n")
+                                   .arg(medal)
+                                   .arg(playerNumber)
+                                   .arg(points);
+            }
+
+            ui->label_result->setText(rankingText);
+        }
+
         return;
     }
 
-    // Przejście do kolejnego pytania
+
     quizManager.nextQuestion();
     showQuestion();
 }
@@ -182,6 +220,14 @@ void MainWindow::checkAnswer(QChar answer)
     if (quizManager.checkAnswer(answer)) {
         ui->label_feedback->setText("✅ Dobra odpowiedź!");
         correctAnswers++;
+
+        if (totalPlayers > 1) {
+            // Multiplayer: zwiększ wynik aktualnego gracza
+            if (playerScores.size() < totalPlayers) {
+                playerScores.resize(totalPlayers); // upewnij się, że vector jest gotowy
+            }
+            playerScores[currentPlayer - 1]++; // currentPlayer od 1, a indeksy od 0
+        }
     } else {
         ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(quizManager.currentQuestion().getCorrectAnswer()));
     }
@@ -284,16 +330,20 @@ void MainWindow::on_tryb_gry_multiplayer_clicked()
 
 void MainWindow::on_button_start_multiplayer_clicked()
 {
+    // 🔴 RESETUJEMY dane przed nową grą!
+    playerScores.clear();
+    correctAnswers = 0;
+    currentRound = 1;
+    currentPlayer = 1;
+
     bool okRounds, okPlayers;
     int rounds = ui->lineEdit_multi_rounds->text().toInt(&okRounds);
     int players = ui->lineEdit_players_count->text().toInt(&okPlayers);
 
     if (okRounds && rounds > 0 && okPlayers && players > 0) {
         totalRounds = rounds;
-        totalPlayers = players; // Zmieniamy liczbę graczy na podaną przez użytkownika
-        currentRound = 1;
-        currentPlayer = 1;
-        correctAnswers = 0;
+        totalPlayers = players;
+        playerScores.resize(totalPlayers, 0);  // 🔴 Inicjalizujemy wyniki na 0
 
         loadQuestions();
         ui->stackedWidget->setCurrentIndex(2); // Strona pytań
@@ -302,3 +352,4 @@ void MainWindow::on_button_start_multiplayer_clicked()
         QMessageBox::warning(this, "Błąd", "Wprowadź poprawną liczbę rund i graczy!");
     }
 }
+
