@@ -20,7 +20,7 @@ Gra quizowa, która umożliwia wielu graczom odpowiadanie na pytania z różnych
 
 ## Instalacja
 
-- Pobierz pliki gry klikając w odnośnik obok ⟶ [QuizGame](https://mega.nz/file/uxYVkAIY#kdRdoccKv7AlMtYGwnbtrWxdvwmKiZkBLV-bEH-OyNE)
+- Pobierz pliki gry klikając w odnośnik obok ⟶ [QuizGame](https://mega.nz/file/v5pTmLAK#YzJLRjKKoH3fBAfdiZRI1XY-sKzY3U6G6PEs13Uni20)
 - Rozpakuj pobrany folder (prawy przycisk myszy ⟶ wyodrębnij wszytkie)
 - Przejdź do folderu exe
 - Uruchom plik QuizGame.exe
@@ -41,4 +41,3 @@ Po uruchomieniu gry użytkownik może:
 ## Plik `databaseeditor`
 
 Aby edytować pytania i kategorie pytań w grze, należy skorzystać z programu `databaseeditor`, który znajduje się w folderze exe po wypakowaniu. Umożliwia on modyfikację bazy pytań i kategorii quizu.
-https://mega.nz/folder/uhhDEJDQ#K0s94U40Q_Yg0exb4fIpsQ
