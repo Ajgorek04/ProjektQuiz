@@ -88,8 +88,12 @@ void MainWindow::on_back_button_clicked()
     correctAnswers = 0;
     totalRounds = 0;
     currentRound = 0;
-    ui->stackedWidget->setCurrentIndex(0);
+    totalPlayers = 1;  // Resetuj liczbę graczy
+    currentPlayer = 1;
+    playerScores.clear(); // Opróżnij tablicę wyników graczy
+    ui->stackedWidget->setCurrentIndex(0); // Powrót do ekranu głównego
 }
+
 
 void MainWindow::on_back_button2_clicked()
 {
@@ -115,28 +119,41 @@ void MainWindow::on_back_button4_clicked()
 
 void MainWindow::on_tryb_gry1_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(5);
+    // Resetujemy zmienne odpowiedzialne za tryb wieloosobowy
+    totalPlayers = 1; // tylko 1 gracz
+    currentPlayer = 1;
+    correctAnswers = 0;
+
+    ui->stackedWidget->setCurrentIndex(5); // Strona pytań w trybie jednoosobowym
     loadQuestions();
 }
 
+
 void MainWindow::on_button_next_clicked()
 {
-    if (currentRound >= totalRounds) {
-        // Przejdź na stronę wyników
+    if (totalPlayers > 1) {
+        // Przełącz gracza w trybie wieloosobowym
+        currentPlayer++;
+        if (currentPlayer > totalPlayers) {
+            currentPlayer = 1;
+            currentRound++;
+        }
+    } else {
+        // W trybie jednoosobowym nie zmienia się gracz
+        currentRound++;
+    }
+
+    if (currentRound > totalRounds) {
+        // Koniec gry
         ui->stackedWidget->setCurrentWidget(ui->page_result);
-
-        // Ustaw tekst wyniku na stronie wyników
-        ui->label_result->setText(QString("Koniec gry!\nTwój wynik: %1 / %2").arg(correctAnswers).arg(totalRounds));
-
+        ui->label_result->setText(QString("Koniec gry!\nTwój wynik: %1 / %2").arg(correctAnswers).arg(totalRounds * totalPlayers));
         return;
     }
 
-    // Normalne przejście do kolejnego pytania
+    // Przejście do kolejnego pytania
     quizManager.nextQuestion();
     showQuestion();
-    currentRound++;
 }
-
 
 
 void MainWindow::on_button_answerA_clicked()
@@ -179,6 +196,7 @@ void MainWindow::checkAnswer(QChar answer)
 
 void MainWindow::showQuestion()
 {
+    ui->label_current_player->setText(QString("Gracz %1 odpowiada").arg(currentPlayer));
     if (!quizManager.hasMoreQuestions()) {
         ui->label_question->setText("Koniec quizu!");
         ui->button_answerA->setEnabled(false);
@@ -246,3 +264,41 @@ void MainWindow::on_button_return_to_menu_clicked()
     correctAnswers = 0;
 }
 
+
+void MainWindow::on_button_return_to_menu_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0); // powrót na stronę główną
+}
+
+
+void MainWindow::on_tryb_gry_multiplayer_clicked()
+{
+    // Resetujemy zmienne odpowiedzialne za tryb jednoosobowy
+    totalPlayers = 0; // Ustawiamy na 0, będzie zaktualizowane po wprowadzeniu liczby graczy
+    currentPlayer = 1;
+    correctAnswers = 0;
+
+    ui->stackedWidget->setCurrentIndex(7); // Strona wyboru trybu wieloosobowego
+}
+
+
+void MainWindow::on_button_start_multiplayer_clicked()
+{
+    bool okRounds, okPlayers;
+    int rounds = ui->lineEdit_multi_rounds->text().toInt(&okRounds);
+    int players = ui->lineEdit_players_count->text().toInt(&okPlayers);
+
+    if (okRounds && rounds > 0 && okPlayers && players > 0) {
+        totalRounds = rounds;
+        totalPlayers = players; // Zmieniamy liczbę graczy na podaną przez użytkownika
+        currentRound = 1;
+        currentPlayer = 1;
+        correctAnswers = 0;
+
+        loadQuestions();
+        ui->stackedWidget->setCurrentIndex(2); // Strona pytań
+        showQuestion();
+    } else {
+        QMessageBox::warning(this, "Błąd", "Wprowadź poprawną liczbę rund i graczy!");
+    }
+}

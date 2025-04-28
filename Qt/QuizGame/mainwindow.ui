@@ -17,14 +17,14 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_6">
-    <item row="0" column="0">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="frameShape">
        <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout">
@@ -211,7 +211,7 @@ QPushButton:hover {
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="rules_3">
+           <widget class="QPushButton" name="tryb_gry_multiplayer">
             <property name="styleSheet">
              <string notr="true">QPushButton {
     text-align: center;
@@ -261,6 +261,22 @@ QPushButton:hover {
       </widget>
       <widget class="QWidget" name="page3">
        <layout class="QGridLayout" name="gridLayout_3">
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_question">
+          <property name="styleSheet">
+           <string notr="true">QLabel#label_question {
+    font-size:  22px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    qproperty-alignment: 'AlignCenter';
+}</string>
+          </property>
+          <property name="text">
+           <string>Pytanie</string>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="0">
          <widget class="QLabel" name="label_2">
           <property name="font">
@@ -292,75 +308,7 @@ font-weight: bold;</string>
           </property>
          </widget>
         </item>
-        <item row="5" column="0">
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QPushButton" name="back_button3">
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    background-color:  #737373 ;
-    color: white;
-    font-size: 24px;
-    border-radius: 10px;
-	font-weight: bold;
-	margin-right: 100px;
-}
-QPushButton:hover {
-    background-color: #595959;
-}</string>
-            </property>
-            <property name="text">
-             <string>POWRÓT DO MENU</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="button_next">
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    background-color:  #737373 ;
-    color: white;
-    font-size: 24px;
-    border-radius: 10px;
-	font-weight: bold;
-	margin-left: 100px;
-}
-QPushButton:hover {
-    background-color: #595959;
-}</string>
-            </property>
-            <property name="text">
-             <string>NASTĘPNE PYTANIE</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
         <item row="4" column="0">
-         <widget class="QLabel" name="label_feedback">
-          <property name="styleSheet">
-           <string notr="true">QLabel#label_feedback {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    padding:  5px;
-    border-radius: 10px;
-    qproperty-alignment: 'AlignCenter';
-}
-</string>
-          </property>
-          <property name="text">
-           <string>Wynik</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
          <layout class="QFormLayout" name="formLayout">
           <property name="labelAlignment">
            <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -477,23 +425,75 @@ QPushButton:hover {
           </item>
          </layout>
         </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_question">
-          <property name="styleSheet">
-           <string notr="true">QLabel#label_question {
-    font-size:  22px;
-    font-weight: bold;
-    color: #fff;
-    background: transparent;
-    qproperty-alignment: 'AlignCenter';
+        <item row="6" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="back_button3">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+	margin-right: 100px;
+}
+QPushButton:hover {
+    background-color: #595959;
 }</string>
+            </property>
+            <property name="text">
+             <string>POWRÓT DO MENU</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_next">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+	margin-left: 100px;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+            </property>
+            <property name="text">
+             <string>NASTĘPNE PYTANIE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_feedback">
+          <property name="styleSheet">
+           <string notr="true">QLabel#label_feedback {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding:  5px;
+    border-radius: 10px;
+    qproperty-alignment: 'AlignCenter';
+}
+</string>
           </property>
           <property name="text">
-           <string>Pytanie</string>
+           <string>Wynik</string>
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
+        <item row="2" column="0">
          <widget class="QLabel" name="label_category">
           <property name="layoutDirection">
            <enum>Qt::LayoutDirection::LeftToRight</enum>
@@ -508,6 +508,18 @@ font-weight: bold;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_current_player">
+          <property name="styleSheet">
+           <string notr="true">    font-size: 16px;
+    color: #fff;
+    font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
           </property>
          </widget>
         </item>
@@ -880,6 +892,160 @@ QPushButton:hover {
            <string>WYJŚCIE</string>
           </property>
          </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_multiplayer_setup">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <family>Segoe Script</family>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;
+font-size: 36px;
+font-weight: bold;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>QUIZ GAME MULTIPLAYER</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::TextFormat::AutoText</enum>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="qlabelrounds">
+          <property name="styleSheet">
+           <string notr="true">    font-size: 16px;
+    color: #fff;
+    font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>Wpisz liczbę rund</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_multi_rounds">
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::RightToLeft</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    background-color: #ecf0f1;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="qlbale">
+          <property name="styleSheet">
+           <string notr="true">    font-size: 16px;
+    color: #fff;
+    font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>Wpisz liczbę graczy</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_players_count">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    background-color: #ecf0f1;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="button_return_to_menu_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+            </property>
+            <property name="text">
+             <string>POWRÓT DO MENU</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_start_multiplayer">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+            </property>
+            <property name="text">
+             <string>ROZPOCZNIJ GRĘ</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>

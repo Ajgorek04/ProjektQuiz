@@ -58,6 +58,12 @@ private slots:
 
     void on_button_return_to_menu_clicked();
 
+    void on_button_return_to_menu_2_clicked();
+
+    void on_tryb_gry_multiplayer_clicked();
+
+    void on_button_start_multiplayer_clicked();
+
 private:
     Ui::MainWindow *ui;
     void loadCategories();
@@ -70,5 +76,8 @@ private:
     int totalRounds = 0;
     int currentRound = 0;
     int correctAnswers = 0;
+    int totalPlayers = 1;
+    int currentPlayer = 1;
+    QVector<int> playerScores;
 };
 #endif // MAINWINDOW_H
