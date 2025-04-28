@@ -41,3 +41,4 @@ Po uruchomieniu gry użytkownik może:
 ## Plik `databaseeditor`
 
 Aby edytować pytania i kategorie pytań w grze, należy skorzystać z programu `databaseeditor`, który znajduje się w folderze exe po wypakowaniu. Umożliwia on modyfikację bazy pytań i kategorii quizu.
+https://mega.nz/folder/uhhDEJDQ#K0s94U40Q_Yg0exb4fIpsQ
