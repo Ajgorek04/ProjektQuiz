@@ -54,7 +54,7 @@ void MainWindow::on_category_clicked()
 
 void MainWindow::loadCategories()
 {
-    QFile file(":/csv/categories.csv");
+    QFile file("categories.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku categories.csv";
         return;
@@ -75,7 +75,7 @@ void MainWindow::loadCategories()
 
 void MainWindow::loadQuestions()
 {
-    if (quizManager.loadQuestions(":/questions/questions.csv")) {
+    if (quizManager.loadQuestions("questions.csv")) {
         quizManager.shuffleQuestions();
         showQuestion();
     } else {

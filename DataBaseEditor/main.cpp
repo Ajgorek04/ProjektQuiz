@@ -143,7 +143,7 @@ void showQuestions(const vector<Question>& questions) {
 }
 // Funkcja do zapisywania pytań do pliku CSV
 void saveQuestions(const vector<Question>& questions) {
-    ofstream questionsFile("../Qt/QuizGame/questions.csv");
+    ofstream questionsFile("../questions.csv");
 
     if (questionsFile.is_open()) {
         for (const auto& q : questions) {
@@ -156,7 +156,7 @@ void saveQuestions(const vector<Question>& questions) {
 }
 // Funkcja do zapisywania kategorii do pliku
 void saveCategories(const set<string>& categories) {
-    ofstream categoriesFile("../Qt/QuizGame/categories.csv");
+    ofstream categoriesFile("../categories.csv");
 
     if (categoriesFile.is_open()) {
         for (const auto& cat : categories) {
