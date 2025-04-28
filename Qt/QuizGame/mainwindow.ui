@@ -17,18 +17,18 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
-    <item>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="frameShape">
        <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="page">
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
          <widget class="QLabel" name="label">
           <property name="font">
            <font>
@@ -59,15 +59,13 @@ font-weight: bold;</string>
           </property>
          </widget>
         </item>
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QPushButton" name="start">
-            <property name="layoutDirection">
-             <enum>Qt::LayoutDirection::LeftToRight</enum>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+        <item row="1" column="0">
+         <widget class="QPushButton" name="start">
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -80,16 +78,16 @@ font-weight: bold;</string>
 QPushButton:hover {
     background-color: #45a049;
 }</string>
-            </property>
-            <property name="text">
-             <string>START</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="category">
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>START</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="category">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -102,16 +100,16 @@ QPushButton:hover {
 QPushButton:hover {
     background-color:   #ffaa00 ;
 }</string>
-            </property>
-            <property name="text">
-             <string>KATEGORIE</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="rules">
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>KATEGORIE</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="rules">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -124,16 +122,16 @@ QPushButton:hover {
 QPushButton:hover {
     background-color:  #007399 ;
 }</string>
-            </property>
-            <property name="text">
-             <string>ZASADY</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="exit">
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>ZASADY</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="exit">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -146,13 +144,11 @@ QPushButton:hover {
 QPushButton:hover {
     background-color: #595959;
 }</string>
-            </property>
-            <property name="text">
-             <string>WYJŚCIE</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+          </property>
+          <property name="text">
+           <string>WYJŚCIE</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -678,6 +674,210 @@ QPushButton:hover {
           </property>
           <property name="text">
            <string>POWRÓT</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page6">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <family>Segoe Script</family>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;
+font-size: 36px;
+font-weight: bold;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>PODAJ LICZBĘ RUND</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::TextFormat::AutoText</enum>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_rounds">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    background-color: #ecf0f1;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="button_back_to_menu">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+            </property>
+            <property name="text">
+             <string>POWRÓT DO MENU</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_start_rounds">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+            </property>
+            <property name="text">
+             <string>ROZPOCZNIJ GRĘ</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_result">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0" colspan="3">
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <family>Segoe Script</family>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;
+font-size: 36px;
+font-weight: bold;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>KONIEC GRY</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::TextFormat::AutoText</enum>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_result">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    qproperty-alignment: 'AlignCenter';
+}
+</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="button_return_to_menu">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+          </property>
+          <property name="text">
+           <string>POWRÓT DO MENU</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="exit_2">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:  #737373 ;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+	font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #595959;
+}</string>
+          </property>
+          <property name="text">
+           <string>WYJŚCIE</string>
           </property>
          </widget>
         </item>

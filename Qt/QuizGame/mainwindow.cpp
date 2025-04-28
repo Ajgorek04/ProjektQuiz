@@ -54,7 +54,7 @@ void MainWindow::on_category_clicked()
 
 void MainWindow::loadCategories()
 {
-    QFile file("categories.csv");
+    QFile file("F:/Coding/ProjektQuiz/Qt/QuizGame/categories.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku categories.csv";
         return;
@@ -75,7 +75,7 @@ void MainWindow::loadCategories()
 
 void MainWindow::loadQuestions()
 {
-    if (quizManager.loadQuestions("questions.csv")) {
+    if (quizManager.loadQuestions("F:/Coding/ProjektQuiz/Qt/QuizGame/questions.csv")) {
         quizManager.shuffleQuestions();
         showQuestion();
     } else {
@@ -85,6 +85,9 @@ void MainWindow::loadQuestions()
 
 void MainWindow::on_back_button_clicked()
 {
+    correctAnswers = 0;
+    totalRounds = 0;
+    currentRound = 0;
     ui->stackedWidget->setCurrentIndex(0);
 }
 
@@ -112,16 +115,29 @@ void MainWindow::on_back_button4_clicked()
 
 void MainWindow::on_tryb_gry1_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget->setCurrentIndex(5);
     loadQuestions();
 }
 
-
 void MainWindow::on_button_next_clicked()
 {
+    if (currentRound >= totalRounds) {
+        // Przejdź na stronę wyników
+        ui->stackedWidget->setCurrentWidget(ui->page_result);
+
+        // Ustaw tekst wyniku na stronie wyników
+        ui->label_result->setText(QString("Koniec gry!\nTwój wynik: %1 / %2").arg(correctAnswers).arg(totalRounds));
+
+        return;
+    }
+
+    // Normalne przejście do kolejnego pytania
     quizManager.nextQuestion();
     showQuestion();
+    currentRound++;
 }
+
+
 
 void MainWindow::on_button_answerA_clicked()
 {
@@ -148,6 +164,7 @@ void MainWindow::checkAnswer(QChar answer)
 {
     if (quizManager.checkAnswer(answer)) {
         ui->label_feedback->setText("✅ Dobra odpowiedź!");
+        correctAnswers++;
     } else {
         ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(quizManager.currentQuestion().getCorrectAnswer()));
     }
@@ -158,6 +175,7 @@ void MainWindow::checkAnswer(QChar answer)
     ui->button_answerC->setEnabled(false);
     ui->button_answerD->setEnabled(false);
 }
+
 
 void MainWindow::showQuestion()
 {
@@ -189,5 +207,42 @@ void MainWindow::showQuestion()
     ui->button_answerD->setEnabled(true);
     ui->button_next->setEnabled(false);
     ui->label_feedback->clear();
+}
+
+
+void MainWindow::on_button_back_to_menu_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_button_start_rounds_clicked()
+{
+    bool ok;
+    int rounds = ui->lineEdit_rounds->text().toInt(&ok);
+
+    if (ok && rounds > 0) {
+        totalRounds = rounds;
+        currentRound = 1; // zaczynamy od pierwszej rundy
+        ui->stackedWidget->setCurrentIndex(2); // przejdź na stronę quizu (jeśli quiz jest na stronie 2)
+        loadQuestions();
+    } else {
+        QMessageBox::warning(this, "Błąd", "Wprowadź poprawną liczbę rund!");
+    }
+}
+
+
+void MainWindow::on_exit_2_clicked()
+{
+    QApplication::quit();
+}
+
+
+void MainWindow::on_button_return_to_menu_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0); // powrót na stronę główną
+    totalRounds = 0;
+    currentRound = 0;
+    correctAnswers = 0;
 }
 

@@ -50,6 +50,14 @@ private slots:
 
     void on_button_answerD_clicked();
 
+    void on_button_back_to_menu_clicked();
+
+    void on_button_start_rounds_clicked();
+
+    void on_exit_2_clicked();
+
+    void on_button_return_to_menu_clicked();
+
 private:
     Ui::MainWindow *ui;
     void loadCategories();
@@ -59,5 +67,8 @@ private:
 
     QuizManager quizManager;
     int currentQuestionIndex = 0;
+    int totalRounds = 0;
+    int currentRound = 0;
+    int correctAnswers = 0;
 };
 #endif // MAINWINDOW_H
