@@ -220,8 +220,32 @@ bool isValidCategory(const string& category, const set<string>& categories) {
 }
 void addQuestions(vector<Question>& questions, set<string>& categories) {
     cin.ignore();
-    string q, a, b, c, d, cat;
+    string q, a, b, c, d;
     char correct;
+
+    cout << "\nWybierz kategorie dla nowego pytania:\n";
+
+    vector<string> categoryList(categories.begin(), categories.end());  // Konwersja zbioru na wektor (żeby móc wybrać po numerze)
+
+    for (size_t i = 0; i < categoryList.size(); ++i) {
+        cout << i + 1 << ". " << categoryList[i] << '\n';
+    }
+
+    int categoryChoice;
+    do {
+        cout << "Wpisz numer kategorii (1-" << categoryList.size() << "): ";
+        cin >> categoryChoice;
+        if (cin.fail() || categoryChoice < 1 || categoryChoice > (int)categoryList.size()) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Niepoprawny numer. Sprobuj ponownie.\n";
+            categoryChoice = -1;
+        }
+    } while (categoryChoice == -1);
+
+    string selectedCategory = categoryList[categoryChoice - 1];
+
+    cin.ignore(); // czyszczenie bufora po wpisaniu numeru
 
     cout << "Podaj tresc pytania: ";
     getline(cin, q);
@@ -241,21 +265,12 @@ void addQuestions(vector<Question>& questions, set<string>& categories) {
         correct = toupper(correct);
     } while (!isValidAnswer(correct));
 
-    cin.ignore(); // czyści bufor
-    do {
-        cout << "Podaj kategorie: ";
-        getline(cin, cat);
-        if (!isValidCategory(cat, categories)) {
-            cout << "Niepoprawna kategoria. Uzyj istniejacej lub dodaj ja osobno w menu.\n";
-        }
-    } while (!isValidCategory(cat, categories));
-
-    // Tworzenie i dodanie pytania
-    Question newQuestion(q, a, b, c, d, correct, cat);
+    Question newQuestion(q, a, b, c, d, correct, selectedCategory);
     questions.push_back(newQuestion);
 
     cout << "Pytanie dodane!\n";
 }
+
 // Funkcja do dodawania nowej kategorii
 void addCategory(set<string>& categories) {
     string newCategory;
