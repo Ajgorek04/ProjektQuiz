@@ -169,7 +169,7 @@ void saveCategories(const set<string>& categories) {
 }
 // Funkcja do wczytywania pytań z pliku
 void loadQuestions(vector<Question>& questions) {
-    ifstream questionsFile("../Qt/QuizGame/questions.csv");
+    ifstream questionsFile("../questions.csv");
     string line;
 
     if (questionsFile.is_open()) {
@@ -183,7 +183,7 @@ void loadQuestions(vector<Question>& questions) {
 }
 // Funkcja do wczytywania kategorii z pliku
 void loadCategories(set<string>& categories) {
-    ifstream categoriesFile("../Qt/QuizGame/categories.csv");
+    ifstream categoriesFile("../categories.csv");
     string line;
 
     if (categoriesFile.is_open()) {

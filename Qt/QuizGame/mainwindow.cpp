@@ -54,7 +54,7 @@ void MainWindow::on_category_clicked()
 
 void MainWindow::loadCategories()
 {
-    QFile file("F:/Coding/ProjektQuiz/Qt/QuizGame/categories.csv");
+    QFile file("categories.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku categories.csv";
         return;
@@ -75,7 +75,7 @@ void MainWindow::loadCategories()
 
 void MainWindow::loadQuestions()
 {
-    if (quizManager.loadQuestions("F:/Coding/ProjektQuiz/Qt/QuizGame/questions.csv")) {
+    if (quizManager.loadQuestions("questions.csv")) {
         quizManager.shuffleQuestions();
         showQuestion();
     } else {
@@ -88,10 +88,10 @@ void MainWindow::on_back_button_clicked()
     correctAnswers = 0;
     totalRounds = 0;
     currentRound = 0;
-    totalPlayers = 1;  // Resetuj liczbę graczy
+    totalPlayers = 1;
     currentPlayer = 1;
-    playerScores.clear(); // Opróżnij tablicę wyników graczy
-    ui->stackedWidget->setCurrentIndex(0); // Powrót do ekranu głównego
+    playerScores.clear();
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 
@@ -110,7 +110,6 @@ void MainWindow::on_back_button3_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-// Powrot z wyboru trybu gry
 void MainWindow::on_back_button4_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
@@ -119,12 +118,12 @@ void MainWindow::on_back_button4_clicked()
 
 void MainWindow::on_tryb_gry1_clicked()
 {
-    // Resetujemy zmienne odpowiedzialne za tryb wieloosobowy
-    totalPlayers = 1; // tylko 1 gracz
+
+    totalPlayers = 1;
     currentPlayer = 1;
     correctAnswers = 0;
 
-    ui->stackedWidget->setCurrentIndex(5); // Strona pytań w trybie jednoosobowym
+    ui->stackedWidget->setCurrentIndex(5);
     loadQuestions();
 }
 
@@ -132,14 +131,14 @@ void MainWindow::on_tryb_gry1_clicked()
 void MainWindow::on_button_next_clicked()
 {
     if (totalPlayers > 1) {
-        // Przełącz gracza w trybie wieloosobowym
+
         currentPlayer++;
         if (currentPlayer > totalPlayers) {
             currentPlayer = 1;
             currentRound++;
         }
     } else {
-        // W trybie jednoosobowym nie zmienia się gracz
+
         currentRound++;
     }
 
@@ -150,22 +149,19 @@ void MainWindow::on_button_next_clicked()
             // Single player
             ui->label_result->setText(QString("Koniec gry!\nTwój wynik: %1 / %2").arg(correctAnswers).arg(totalRounds));
         } else {
-            // Multiplayer - pokaz ranking
+
             QString rankingText = "🏆 Wyniki:\n\n";
 
-            // Przygotuj listę (gracz, punkty)
-            QVector<QPair<int, int>> results; // <graczIndex, punkty>
+            QVector<QPair<int, int>> results;
 
             for (int i = 0; i < playerScores.size(); ++i) {
                 results.append(qMakePair(i, playerScores[i]));
             }
 
-            // Sortuj malejąco po punktach
             std::sort(results.begin(), results.end(), [](const QPair<int, int>& a, const QPair<int, int>& b) {
                 return a.second > b.second;
             });
 
-            // Wypisz graczy z miejscami
             for (int i = 0; i < results.size(); ++i) {
                 QString medal;
                 if (i == 0) medal = "🥇";
@@ -173,7 +169,7 @@ void MainWindow::on_button_next_clicked()
                 else if (i == 2) medal = "🥉";
                 else medal = "";
 
-                int playerNumber = results[i].first + 1; // bo indeks 0-based
+                int playerNumber = results[i].first + 1;
                 int points = results[i].second;
 
                 rankingText += QString("%1 Gracz %2: %3 punktów\n")
@@ -222,11 +218,10 @@ void MainWindow::checkAnswer(QChar answer)
         correctAnswers++;
 
         if (totalPlayers > 1) {
-            // Multiplayer: zwiększ wynik aktualnego gracza
             if (playerScores.size() < totalPlayers) {
-                playerScores.resize(totalPlayers); // upewnij się, że vector jest gotowy
+                playerScores.resize(totalPlayers);
             }
-            playerScores[currentPlayer - 1]++; // currentPlayer od 1, a indeksy od 0
+            playerScores[currentPlayer - 1]++;
         }
     } else {
         ui->label_feedback->setText("❌ Zła odpowiedź! Poprawna: " + QString(quizManager.currentQuestion().getCorrectAnswer()));
@@ -287,8 +282,8 @@ void MainWindow::on_button_start_rounds_clicked()
 
     if (ok && rounds > 0) {
         totalRounds = rounds;
-        currentRound = 1; // zaczynamy od pierwszej rundy
-        ui->stackedWidget->setCurrentIndex(2); // przejdź na stronę quizu (jeśli quiz jest na stronie 2)
+        currentRound = 1;
+        ui->stackedWidget->setCurrentIndex(2);
         loadQuestions();
     } else {
         QMessageBox::warning(this, "Błąd", "Wprowadź poprawną liczbę rund!");
@@ -304,7 +299,7 @@ void MainWindow::on_exit_2_clicked()
 
 void MainWindow::on_button_return_to_menu_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(0); // powrót na stronę główną
+    ui->stackedWidget->setCurrentIndex(0);
     totalRounds = 0;
     currentRound = 0;
     correctAnswers = 0;
@@ -313,24 +308,24 @@ void MainWindow::on_button_return_to_menu_clicked()
 
 void MainWindow::on_button_return_to_menu_2_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(0); // powrót na stronę główną
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 
 void MainWindow::on_tryb_gry_multiplayer_clicked()
 {
-    // Resetujemy zmienne odpowiedzialne za tryb jednoosobowy
-    totalPlayers = 0; // Ustawiamy na 0, będzie zaktualizowane po wprowadzeniu liczby graczy
+
+    totalPlayers = 0;
     currentPlayer = 1;
     correctAnswers = 0;
 
-    ui->stackedWidget->setCurrentIndex(7); // Strona wyboru trybu wieloosobowego
+    ui->stackedWidget->setCurrentIndex(7);
 }
 
 
 void MainWindow::on_button_start_multiplayer_clicked()
 {
-    // 🔴 RESETUJEMY dane przed nową grą!
+
     playerScores.clear();
     correctAnswers = 0;
     currentRound = 1;
@@ -343,10 +338,10 @@ void MainWindow::on_button_start_multiplayer_clicked()
     if (okRounds && rounds > 0 && okPlayers && players > 0) {
         totalRounds = rounds;
         totalPlayers = players;
-        playerScores.resize(totalPlayers, 0);  // 🔴 Inicjalizujemy wyniki na 0
+        playerScores.resize(totalPlayers, 0);
 
         loadQuestions();
-        ui->stackedWidget->setCurrentIndex(2); // Strona pytań
+        ui->stackedWidget->setCurrentIndex(2);
         showQuestion();
     } else {
         QMessageBox::warning(this, "Błąd", "Wprowadź poprawną liczbę rund i graczy!");
