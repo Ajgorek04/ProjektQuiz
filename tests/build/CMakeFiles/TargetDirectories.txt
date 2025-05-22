@@ -1,0 +1,5 @@
+C:/Users/Ajgorek/Documents/test/ProjektQuiz/tests/build/CMakeFiles/tests.dir
+C:/Users/Ajgorek/Documents/test/ProjektQuiz/tests/build/CMakeFiles/edit_cache.dir
+C:/Users/Ajgorek/Documents/test/ProjektQuiz/tests/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Ajgorek/Documents/test/ProjektQuiz/tests/build/CMakeFiles/tests_autogen_timestamp_deps.dir
+C:/Users/Ajgorek/Documents/test/ProjektQuiz/tests/build/CMakeFiles/tests_autogen.dir

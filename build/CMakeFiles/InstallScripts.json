@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"F:/Coding/ProjektQuiz/build/cmake_install.cmake",
-		"F:/Coding/ProjektQuiz/build/tests/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

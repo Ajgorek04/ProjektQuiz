@@ -1,6 +1,0 @@
-set(__QT_DEPLOY_TARGET_tests_FILE F:/Coding/ProjektQuiz/build/tests/tests.exe)
-set(__QT_DEPLOY_TARGET_tests_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_tests_RUNTIME_DLLS C:/Qt/6.9.0/mingw_64/bin/Qt6Test.dll;C:/Qt/6.9.0/mingw_64/bin/Qt6Core.dll)
-set(__QT_DEPLOY_TARGET_QuizGame_FILE F:/Coding/ProjektQuiz/build/QuizGame.exe)
-set(__QT_DEPLOY_TARGET_QuizGame_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_QuizGame_RUNTIME_DLLS C:/Qt/6.9.0/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.9.0/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.9.0/mingw_64/bin/Qt6Core.dll)

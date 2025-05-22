@@ -1,9 +1,0 @@
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/QuizGame.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/edit_cache.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/rebuild_cache.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/list_install_components.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/install.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/install/local.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/install/strip.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/QuizGame_autogen_timestamp_deps.dir
-F:/Coding/ProjektQuiz/Qt/QuizGame/CMakeFiles/QuizGame_autogen.dir
