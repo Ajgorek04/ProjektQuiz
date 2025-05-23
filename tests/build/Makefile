@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests
+CMAKE_SOURCE_DIR = F:\Coding\ProjektQuiz\tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build
+CMAKE_BINARY_DIR = F:\Coding\ProjektQuiz\tests\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build\CMakeFiles C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Coding\ProjektQuiz\tests\build\CMakeFiles F:\Coding\ProjektQuiz\tests\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Coding\ProjektQuiz\tests\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,29 +154,29 @@ tests_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_autogen.dir\build.make CMakeFiles/tests_autogen.dir/build
 .PHONY : tests_autogen/fast
 
-C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.obj: C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.obj
-.PHONY : C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.obj
+F_/Coding/ProjektQuiz/src/question.obj: F_/Coding/ProjektQuiz/src/question.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/question.obj
 
 # target to build an object file
-C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.obj
-.PHONY : C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.obj
+F_/Coding/ProjektQuiz/src/question.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.obj
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.obj
 
-C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.i: C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.i
-.PHONY : C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.i
+F_/Coding/ProjektQuiz/src/question.i: F_/Coding/ProjektQuiz/src/question.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/question.i
 
 # target to preprocess a source file
-C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.i
-.PHONY : C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.i
+F_/Coding/ProjektQuiz/src/question.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.i
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.i
 
-C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.s: C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.s
-.PHONY : C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.s
+F_/Coding/ProjektQuiz/src/question.s: F_/Coding/ProjektQuiz/src/question.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/question.s
 
 # target to generate assembly for a file
-C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.s
-.PHONY : C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.cpp.s
+F_/Coding/ProjektQuiz/src/question.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/F_/Coding/ProjektQuiz/src/question.cpp.s
+.PHONY : F_/Coding/ProjektQuiz/src/question.cpp.s
 
 test_question.obj: test_question.cpp.obj
 .PHONY : test_question.obj
@@ -237,9 +237,9 @@ help:
 	@echo ... tests_autogen
 	@echo ... tests_autogen_timestamp_deps
 	@echo ... tests
-	@echo ... C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.obj
-	@echo ... C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.i
-	@echo ... C_/Users/Ajgorek/Documents/test/ProjektQuiz/src/question.s
+	@echo ... F_/Coding/ProjektQuiz/src/question.obj
+	@echo ... F_/Coding/ProjektQuiz/src/question.i
+	@echo ... F_/Coding/ProjektQuiz/src/question.s
 	@echo ... test_question.obj
 	@echo ... test_question.i
 	@echo ... test_question.s

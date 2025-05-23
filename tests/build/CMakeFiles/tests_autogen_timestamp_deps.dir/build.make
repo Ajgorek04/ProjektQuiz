@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests
+CMAKE_SOURCE_DIR = F:\Coding\ProjektQuiz\tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build
+CMAKE_BINARY_DIR = F:\Coding\ProjektQuiz\tests\build
 
 # Utility rule file for tests_autogen_timestamp_deps.
 
@@ -80,6 +80,6 @@ CMakeFiles/tests_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/tests_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/tests_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build C:\Users\Ajgorek\Documents\test\ProjektQuiz\tests\build\CMakeFiles\tests_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\Coding\ProjektQuiz\tests F:\Coding\ProjektQuiz\tests F:\Coding\ProjektQuiz\tests\build F:\Coding\ProjektQuiz\tests\build F:\Coding\ProjektQuiz\tests\build\CMakeFiles\tests_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tests_autogen_timestamp_deps.dir/depend
 
