@@ -300,6 +300,9 @@ font-weight: bold;</string>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
             <widget class="QRadioButton" name="radio_mixed">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
              <property name="text">
               <string>MIESZANE KATEGORIE</string>
              </property>
@@ -321,8 +324,11 @@ font-weight: bold;</string>
            <bool>false</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true">background: transparent;
-border: none;</string>
+           <string notr="true">border: none;
+background: transparent;</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SelectionMode::MultiSelection</enum>
           </property>
          </widget>
         </item>

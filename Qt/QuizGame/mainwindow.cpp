@@ -61,12 +61,12 @@ void MainWindow::loadCategories()
     }
 
     QTextStream in(&file);
-    ui->listWidget_category->clear();
+    ui->listWidget_category_2->clear();
 
     while (!in.atEnd()) {
         QString line = in.readLine().trimmed();
         if (!line.isEmpty()) {
-            ui->listWidget_category->addItem(line);
+            ui->listWidget_category_2->addItem(line);
         }
     }
 
@@ -330,13 +330,14 @@ void MainWindow::on_button_return_to_menu_2_clicked()
 
 void MainWindow::on_tryb_gry_multiplayer_clicked()
 {
-
     totalPlayers = 0;
     currentPlayer = 1;
     correctAnswers = 0;
 
+    loadCategories();
     ui->stackedWidget->setCurrentIndex(8);
 }
+
 
 
 void MainWindow::on_button_start_multiplayer_clicked()
@@ -364,20 +365,19 @@ void MainWindow::on_button_start_multiplayer_clicked()
     }
 }
 
-
 void MainWindow::on_radio_mixed_toggled(bool checked)
 {
     if (checked) {
-        ui->listWidget_category->setEnabled(false);
-        ui->listWidget_category->clearSelection(); // czyszczenie zaznaczenia, jeśli było
+        ui->listWidget_category_2->setEnabled(false);
+        ui->listWidget_category_2->clearSelection();
     }
 }
 
-
 void MainWindow::on_radio_select_toggled(bool checked)
 {
-    ui->listWidget_category->setEnabled(checked);
+    ui->listWidget_category_2->setEnabled(checked);
 }
+
 
 void MainWindow::on_back_button3_2_clicked()
 {
@@ -387,7 +387,7 @@ void MainWindow::on_back_button3_2_clicked()
 void MainWindow::on_button_confirm_category_clicked()
 {
     if (ui->radio_select->isChecked()) {
-        auto selectedItems = ui->listWidget_category->selectedItems();
+        auto selectedItems = ui->listWidget_category_2->selectedItems();
         if (selectedItems.isEmpty()) {
             QMessageBox::warning(this, "Uwaga", "Wybierz przynajmniej jedną kategorię lub przełącz na 'Mieszane kategorie'");
             return;
