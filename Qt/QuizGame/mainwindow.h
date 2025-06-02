@@ -80,7 +80,7 @@ private:
     /**
      * @brief Wczytuje pytania quizu.
      */
-    void loadQuestions();
+    void loadQuestions(const QStringList &categories = QStringList());
 
     /**
      * @brief Wyświetla aktualne pytanie na ekranie.

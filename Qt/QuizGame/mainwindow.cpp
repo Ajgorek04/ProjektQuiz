@@ -73,9 +73,9 @@ void MainWindow::loadCategories()
     file.close();
 }
 
-void MainWindow::loadQuestions()
+void MainWindow::loadQuestions(const QStringList &categories)
 {
-    if (quizManager.loadQuestions(":/questions.csv")) {
+    if (quizManager.loadQuestions(":/questions.csv", categories)) {
         quizManager.shuffleQuestions();
         showQuestion();
     } else {
@@ -386,14 +386,21 @@ void MainWindow::on_back_button3_2_clicked()
 
 void MainWindow::on_button_confirm_category_clicked()
 {
+    QStringList selectedCategories;
+
     if (ui->radio_select->isChecked()) {
         auto selectedItems = ui->listWidget_category_2->selectedItems();
         if (selectedItems.isEmpty()) {
             QMessageBox::warning(this, "Uwaga", "Wybierz przynajmniej jedną kategorię lub przełącz na 'Mieszane kategorie'");
             return;
         }
+
+        for (auto item : selectedItems) {
+            selectedCategories.append(item->text());
+        }
     }
 
-    loadQuestions();
+    loadQuestions(selectedCategories); // <-- przekaz wybrane kategorie
     ui->stackedWidget->setCurrentIndex(3);
 }
+
