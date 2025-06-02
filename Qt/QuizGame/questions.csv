@@ -1,47 +1,93 @@
-Stolica Francji;Paryż;Marsylia;Lyon;Nicea;A;Stolice
-Który pierwiastek ma symbol O;Tlen;Wodór;Azot;Hel;A;Chemia
-W którym roku wybuchła II wojna światowa;1939;1914;1945;1920;A;Historia
-Najwyższy szczyt świata;Everest;K2;Kilimandżaro;Mont Blanc;A;Geografia
-Kto napisał "Pan Tadeusz";Mickiewicz;Słowacki;Norwid;Prus;A;Literatura
-Największy kontynent;Azja;Afryka;Ameryka Północna;Australia;A;Geografia
-Kto zagrał główną rolę w filmie "Forrest Gump";Tom Hanks;Brad Pitt;Leonardo DiCaprio;Matt Damon;A;Film
-Które miasto jest stolicą Japonii;Tokio;Osaka;Kioto;Hiroshima;A;Stolice
-Który metal ma symbol Au;Złoto;Srebro;Miedź;Platyna;A;Chemia
-Który sport uprawiał Michael Jordan;Koszykówka;Piłka nożna;Hokej;Tenis;A;Sport
-Kto wynalazł żarówkę;Edison;Tesla;Bell;Newton;A;Technologia
-Ile nóg ma pająk;8;6;4;10;A;Nauka
+Stolica Francji;Marsylia;Paryż;Nicea;Lyon;B;Stolice
+
+Który pierwiastek ma symbol O;Azot;Tlen;Hel;Wodór;B;Chemia
+
+W którym roku wybuchła II wojna światowa;1945;1920;1914;1939;D;Historia
+
+Najwyższy szczyt świata;Everest;Mont Blanc;K2;Kilimandżaro;A;Geografia
+
+Kto napisał "Pan Tadeusz";Norwid;Prus;Mickiewicz;Słowacki;C;Literatura
+
+Największy kontynent;Afryka;Azja;Australia;Ameryka Północna;B;Geografia
+
+Kto zagrał główną rolę w filmie "Forrest Gump";Leonardo DiCaprio;Tom Hanks;Brad Pitt;Matt Damon;B;Film
+
+Które miasto jest stolicą Japonii;Kioto;Tokio;Hiroshima;Osaka;B;Stolice
+
+Który metal ma symbol Au;Srebro;Miedź;Złoto;Platyna;C;Chemia
+
+Który sport uprawiał Michael Jordan;Tenis;Koszykówka;Piłka nożna;Hokej;B;Sport
+
+Kto wynalazł żarówkę;Edison;Newton;Bell;Tesla;A;Technologia
+
+Ile nóg ma pająk;8;6;10;4;A;Nauka
+
 Kiedy Polska odzyskała niepodległość;1918;1939;1945;1795;A;Historia
-Najdłuższa rzeka w Polsce;Wisła;Odra;Warta;Bug;A;Geografia
-Kto śpiewał „Shape of You”;Ed Sheeran;Justin Bieber;Shawn Mendes;Harry Styles;A;Muzyka
-Stolica Kanady;Ottawa;Toronto;Montreal;Vancouver;A;Stolice
-Ile wynosi pierwiastek z 49;7;6;9;8;A;Nauka
-Jak nazywa się cząstka odpowiedzialna za ładunek ujemny;Elektron;Proton;Neutron;Foton;A;Chemia
-Kiedy wybuchło powstanie warszawskie;1944;1939;1945;1942;A;Historia
-Największe jezioro świata;Kaspijskie;Michigan;Wiktorii;Bałchasz;A;Geografia
-Kto napisał "Lalkę";Prus;Sienkiewicz;Mickiewicz;Reymont;A;Literatura
-Który film zdobył najwięcej Oscarów;Titanic;Avatar;Gladiator;Ben Hur;A;Film
-Największa planeta Układu Słonecznego;Jowisz;Saturn;Ziemia;Mars;A;Nauka
-Jak brzmi symbol chemiczny dla wody;H2O;O2;CO2;NaCl;A;Chemia
-W którym roku był chrzest Polski;966;1410;1025;1138;A;Historia
-Gdzie znajduje się pustynia Atakama;Chile;Egipt;Australia;USA;A;Geografia
-Który kraj jest kolebką piłki nożnej;Anglia;Brazylia;Niemcy;Hiszpania;A;Sport
-Jaką jednostką mierzymy prąd;Amper;Wolt;Wat;Ohm;A;Technologia
-Stolica Australii;Canberra;Sydney;Melbourne;Perth;A;Stolice
-Kto wynalazł druk;Gutenberg;Newton;Edison;Da Vinci;A;Historia
-Ile nóg ma owad;6;8;10;4;A;Nauka
-Który pierwiastek to sól kuchenna;NaCl;KCl;CaCl2;H2SO4;A;Chemia
-Który polski sportowiec zdobył złoto w rzucie młotem;Włodarczyk;Małachowski;Korzeniowski;Lewandowski;A;Sport
-Kto napisał "Quo Vadis";Sienkiewicz;Mickiewicz;Prus;Żeromski;A;Literatura
-Który film animowany zdobył Oscara w 2001;Shrek;Toy Story;Król Lew;Gdzie jest Nemo;A;Film
-Najbliższa planeta od Słońca;Merkury;Wenus;Ziemia;Mars;A;Nauka
-Który gaz jest głównym składnikiem powietrza;Azot;Tlen;CO2;Argon;A;Chemia
-Bitwa pod Grunwaldem miała miejsce w roku;1410;966;1241;1492;A;Historia
-Największy ocean świata;Spokojny;Atlantycki;Indyjski;Arktyczny;A;Geografia
-Ile zawodników gra w siatkówce;6;5;7;4;A;Sport
-Kto wynalazł komputer;Turing;Jobs;Tesla;Gates;A;Technologia
-Stolica Egiptu;Kair;Aleksandria;Luksor;Giza;A;Stolice
-Ile trwa doba na Ziemi;24h;12h;48h;36h;A;Nauka
-Jak nazywa się tablica pierwiastków;Układ okresowy;Tablica logiczna;Lista związków;Tablica Mendelejewa;A;Chemia
+
+Najdłuższa rzeka w Polsce;Warta;Bug;Wisła;Odra;C;Geografia
+
+Kto śpiewał „Shape of You”;Ed Sheeran;Shawn Mendes;Justin Bieber;Harry Styles;A;Muzyka
+
+Stolica Kanady;Ottawa;Montreal;Toronto;Vancouver;A;Stolice
+
+Ile wynosi pierwiastek z 49;7;8;9;6;A;Nauka
+
+Jak nazywa się cząstka odpowiedzialna za ładunek ujemny;Neutron;Foton;Elektron;Proton;C;Chemia
+
+Kiedy wybuchło powstanie warszawskie;1945;1944;1939;1942;B;Historia
+
+Największe jezioro świata;Kaspijskie;Wiktorii;Bałchasz;Michigan;A;Geografia
+
+Kto napisał "Lalkę";Prus;Reymont;Sienkiewicz;Mickiewicz;A;Literatura
+
+Który film zdobył najwięcej Oscarów;Ben Hur;Gladiator;Avatar;Titanic;A;Film
+
+Największa planeta Układu Słonecznego;Mars;Jowisz;Ziemia;Saturn;B;Nauka
+
+Jak brzmi symbol chemiczny dla wody;CO2;H2O;O2;NaCl;B;Chemia
+
+W którym roku był chrzest Polski;1025;966;1138;1410;B;Historia
+
+Gdzie znajduje się pustynia Atakama;USA;Egipt;Chile;Australia;C;Geografia
+
+Który kraj jest kolebką piłki nożnej;Hiszpania;Brazylia;Anglia;Niemcy;C;Sport
+
+Jaką jednostką mierzymy prąd;Wolt;Wat;Ohm;Amper;D;Technologia
+
+Stolica Australii;Canberra;Melbourne;Sydney;Perth;A;Stolice
+
+Kto wynalazł druk;Newton;Gutenberg;Da Vinci;Edison;B;Historia
+
+Ile nóg ma owad;6;10;4;8;A;Nauka
+
+Który pierwiastek to sól kuchenna;CaCl2;NaCl;KCl;H2SO4;B;Chemia
+
+Który polski sportowiec zdobył złoto w rzucie młotem;Korzeniowski;Lewandowski;Małachowski;Włodarczyk;D;Sport
+
+Kto napisał "Quo Vadis";Sienkiewicz;Prus;Żeromski;Mickiewicz;A;Literatura
+
+Który film animowany zdobył Oscara w 2001;Shrek;Gdzie jest Nemo;Król Lew;Toy Story;A;Film
+
+Najbliższa planeta od Słońca;Merkury;Mars;Ziemia;Wenus;A;Nauka
+
+Który gaz jest głównym składnikiem powietrza;Tlen;Azot;Argon;CO2;B;Chemia
+
+Bitwa pod Grunwaldem miała miejsce w roku;1410;1241;1492;966;A;Historia
+
+Największy ocean świata;Indyjski;Spokojny;Atlantycki;Arktyczny;B;Geografia
+
+Ile zawodników gra w siatkówce;4;6;7;5;B;Sport
+
+Kto wynalazł komputer;Turing;Tesla;Jobs;Gates;A;Technologia
+
+Stolica Egiptu;Giza;Kair;Luksor;Aleksandria;B;Stolice
+
+Ile trwa doba na Ziemi;12h;36h;24h;48h;C;Nauka
+
+Jak nazywa się tablica pierwiastków;Tablica Mendelejewa;Układ okresowy;Lista związków;Tablica logiczna;B;Chemia
+
 Kto był pierwszym królem Polski;Chrobry;Mieszko I;Kazimierz Wielki;Jagiełło;A;Historia
-Najwyższy wodospad świata;Salto Angel;Niagara;Victoria;Iguazu;A;Geografia
-Kto zdobył Złotą Piłkę w 2021;Messi;Lewandowski;Ronaldo;Modrić;A;Sport
+
+Najwyższy wodospad świata;Salto Angel;Niagara;Iguazu;Victoria;A;Geografia
+
+Kto zdobył Złotą Piłkę w 2021;Lewandowski;Ronaldo;Modrić;Messi;D;Sport

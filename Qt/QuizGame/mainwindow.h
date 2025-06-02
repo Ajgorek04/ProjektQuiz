@@ -54,6 +54,15 @@ private slots:
     void on_tryb_gry_multiplayer_clicked();
     void on_button_start_multiplayer_clicked();
 
+    void on_radio_mixed_toggled(bool checked);
+
+    void on_radio_select_toggled(bool checked);
+
+    void on_back_button3_2_clicked();
+
+
+    void on_button_confirm_category_clicked();
+
 private:
     Ui::MainWindow *ui; ///< Wskaźnik na UI wygenerowane przez Qt Designer.
 

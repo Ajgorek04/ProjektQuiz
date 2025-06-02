@@ -54,7 +54,7 @@ void MainWindow::on_category_clicked()
 
 void MainWindow::loadCategories()
 {
-    QFile file("categories.csv");
+    QFile file(":/categories.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku categories.csv";
         return;
@@ -75,7 +75,7 @@ void MainWindow::loadCategories()
 
 void MainWindow::loadQuestions()
 {
-    if (quizManager.loadQuestions("questions.csv")) {
+    if (quizManager.loadQuestions(":/questions.csv")) {
         quizManager.shuffleQuestions();
         showQuestion();
     } else {
@@ -118,13 +118,29 @@ void MainWindow::on_back_button4_clicked()
 
 void MainWindow::on_tryb_gry1_clicked()
 {
-
     totalPlayers = 1;
     currentPlayer = 1;
     correctAnswers = 0;
 
-    ui->stackedWidget->setCurrentIndex(5);
-    loadQuestions();
+    loadCategories();
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+QString odmienPunkty(int liczba) {
+    if (liczba == 1)
+        return "punkt";
+
+    int ostatnieDwie = liczba % 100;
+    int ostatnia = liczba % 10;
+
+    if (ostatnieDwie >= 10 && ostatnieDwie <= 20)
+        return "punktów";
+
+    if (ostatnia >= 2 && ostatnia <= 4)
+        return "punkty";
+
+    return "punktów";
 }
 
 
@@ -171,11 +187,11 @@ void MainWindow::on_button_next_clicked()
 
                 int playerNumber = results[i].first + 1;
                 int points = results[i].second;
-
-                rankingText += QString("%1 Gracz %2: %3 punktów\n")
+                rankingText += QString("%1 Gracz %2: %3 %4\n")
                                    .arg(medal)
                                    .arg(playerNumber)
-                                   .arg(points);
+                                   .arg(points)
+                                   .arg(odmienPunkty(points));
             }
 
             ui->label_result->setText(rankingText);
@@ -319,7 +335,7 @@ void MainWindow::on_tryb_gry_multiplayer_clicked()
     currentPlayer = 1;
     correctAnswers = 0;
 
-    ui->stackedWidget->setCurrentIndex(7);
+    ui->stackedWidget->setCurrentIndex(8);
 }
 
 
@@ -348,3 +364,36 @@ void MainWindow::on_button_start_multiplayer_clicked()
     }
 }
 
+
+void MainWindow::on_radio_mixed_toggled(bool checked)
+{
+    if (checked) {
+        ui->listWidget_category->setEnabled(false);
+        ui->listWidget_category->clearSelection(); // czyszczenie zaznaczenia, jeśli było
+    }
+}
+
+
+void MainWindow::on_radio_select_toggled(bool checked)
+{
+    ui->listWidget_category->setEnabled(checked);
+}
+
+void MainWindow::on_back_button3_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_button_confirm_category_clicked()
+{
+    if (ui->radio_select->isChecked()) {
+        auto selectedItems = ui->listWidget_category->selectedItems();
+        if (selectedItems.isEmpty()) {
+            QMessageBox::warning(this, "Uwaga", "Wybierz przynajmniej jedną kategorię lub przełącz na 'Mieszane kategorie'");
+            return;
+        }
+    }
+
+    loadQuestions();
+    ui->stackedWidget->setCurrentIndex(3);
+}

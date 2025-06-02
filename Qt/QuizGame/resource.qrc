@@ -2,4 +2,8 @@
     <qresource prefix="/background">
         <file>images/background.jpg</file>
     </qresource>
+    <qresource prefix="/">
+        <file>categories.csv</file>
+        <file>questions.csv</file>
+    </qresource>
 </RCC>
