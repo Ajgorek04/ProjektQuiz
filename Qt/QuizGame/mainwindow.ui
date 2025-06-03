@@ -24,7 +24,7 @@
        <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout">
@@ -303,6 +303,24 @@ font-weight: bold;</string>
              <property name="enabled">
               <bool>true</bool>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QRadioButton {
+    spacing: 8px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #4CAF50;
+    border: 1px solid #388E3C;
+    border-radius: 8px;
+}</string>
+             </property>
              <property name="text">
               <string>MIESZANE KATEGORIE</string>
              </property>
@@ -310,6 +328,24 @@ font-weight: bold;</string>
            </item>
            <item>
             <widget class="QRadioButton" name="radio_select">
+             <property name="styleSheet">
+              <string notr="true">QRadioButton {
+    spacing: 8px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #4CAF50;
+    border: 1px solid #388E3C;
+    border-radius: 8px;
+}</string>
+             </property>
              <property name="text">
               <string>WYBIERZ KATEGORIĘ</string>
              </property>
@@ -324,8 +360,29 @@ font-weight: bold;</string>
            <bool>false</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true">border: none;
-background: transparent;</string>
+           <string notr="true">QListWidget {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+QListWidget::item {
+    padding: 6px 10px;
+    border: none;
+}
+
+QListWidget::item:hover {
+    background-color: #E8F5E9;
+    color: #1b5e20;
+}
+
+QListWidget::item:selected {
+    background-color: #A5D6A7;
+    color: #1b5e20;
+    border: none;
+}
+</string>
           </property>
           <property name="selectionMode">
            <enum>QAbstractItemView::SelectionMode::MultiSelection</enum>
@@ -650,6 +707,21 @@ font-weight: bold;</string>
       </widget>
       <widget class="QWidget" name="page5">
        <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QListWidget" name="listWidget_category">
+          <property name="styleSheet">
+           <string notr="true">background: transparent;
+color: white;
+text-align: center;
+font-size: 24px;
+border: 1px solid black;
+border-radius: 10px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::NoFrame</enum>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="0">
          <widget class="QLabel" name="label_4">
           <property name="font">
@@ -678,21 +750,6 @@ font-weight: bold;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignmentFlag::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QListWidget" name="listWidget_category">
-          <property name="styleSheet">
-           <string notr="true">background: transparent;
-color: white;
-text-align: center;
-font-size: 24px;
-border: 1px solid black;
-border-radius: 10px;</string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Shape::NoFrame</enum>
           </property>
          </widget>
         </item>

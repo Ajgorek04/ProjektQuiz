@@ -48,9 +48,11 @@ void MainWindow::on_exit_clicked()
 
 void MainWindow::on_category_clicked()
 {
+    qDebug() << "Kliknięto category!";
     loadCategories();
-    ui->stackedWidget->setCurrentIndex(3);
+    ui->stackedWidget->setCurrentIndex(4); // lub inny prawidłowy
 }
+
 
 void MainWindow::loadCategories()
 {
@@ -61,17 +63,21 @@ void MainWindow::loadCategories()
     }
 
     QTextStream in(&file);
+
+    ui->listWidget_category->clear();
     ui->listWidget_category_2->clear();
 
     while (!in.atEnd()) {
         QString line = in.readLine().trimmed();
         if (!line.isEmpty()) {
+            ui->listWidget_category->addItem(line);
             ui->listWidget_category_2->addItem(line);
         }
     }
 
     file.close();
 }
+
 
 void MainWindow::loadQuestions(const QStringList &categories)
 {
@@ -102,7 +108,7 @@ void MainWindow::on_back_button2_clicked()
 
 void MainWindow::on_rules_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(4);
+    ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::on_back_button3_clicked()
