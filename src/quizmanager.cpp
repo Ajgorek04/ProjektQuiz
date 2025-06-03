@@ -58,3 +58,43 @@ bool QuizManager::loadQuestions(const QString& filePath) {
     currentQuestionIndex = 0;
     return !questions.isEmpty();
 }
+
+// Nowa metoda z filtrowaniem po kategoriach
+bool QuizManager::loadQuestions(const QString& filePath, const QStringList& categories) {
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Nie można otworzyć pliku z pytaniami:" << filePath;
+        return false;
+    }
+
+    QTextStream in(&file);
+    QVector<Question> allQuestions;
+
+    while (!in.atEnd()) {
+        QString line = in.readLine().trimmed();
+        if (line.isEmpty()) continue;
+
+        QStringList parts = line.split(';');
+        if (parts.size() < 7) continue;
+
+        Question q(parts[0], {parts[1], parts[2], parts[3], parts[4]}, parts[5][0].toUpper(), parts[6]);
+        allQuestions.append(q);
+    }
+
+    file.close();
+
+    questions.clear();
+
+    if (categories.isEmpty()) {
+        questions = allQuestions;
+    } else {
+        for (const Question& q : allQuestions) {
+            if (categories.contains(q.getCategory())) {
+                questions.append(q);
+            }
+        }
+    }
+
+    currentQuestionIndex = 0;
+    return !questions.isEmpty();
+}
