@@ -10,9 +10,6 @@ var hierarchy =
     [ "Question", "class_question.html", null ],
     [ "QuizManager", "class_quiz_manager.html", null ],
     [ "Ui_MainWindow", "class_ui___main_window.html", [
-      [ "Ui::MainWindow", "class_ui_1_1_main_window.html", null ],
-      [ "Ui::MainWindow", "class_ui_1_1_main_window.html", null ],
-      [ "Ui::MainWindow", "class_ui_1_1_main_window.html", null ],
       [ "Ui::MainWindow", "class_ui_1_1_main_window.html", null ]
     ] ]
 ];

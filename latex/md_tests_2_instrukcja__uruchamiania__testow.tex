@@ -1,0 +1,68 @@
+\chapter{Testy jednostkowe -\/ Projekt\+Quiz}
+\hypertarget{md_tests_2_instrukcja__uruchamiania__testow}{}\label{md_tests_2_instrukcja__uruchamiania__testow}\index{Testy jednostkowe -\/ ProjektQuiz@{Testy jednostkowe -\/ ProjektQuiz}}
+\label{md_tests_2_instrukcja__uruchamiania__testow_autotoc_md18}%
+\Hypertarget{md_tests_2_instrukcja__uruchamiania__testow_autotoc_md18}%
+
+
+Ten projekt zawiera testy jednostkowe dla klasy {\ttfamily \doxylink{class_question}{Question}}, napisane w oparciu o framework {\bfseries{Qt Test}}.\hypertarget{md_tests_2_instrukcja__uruchamiania__testow_autotoc_md19}{}\doxysection{\texorpdfstring{🔧 Kompilacja i uruchamianie testów}{🔧 Kompilacja i uruchamianie testów}}\label{md_tests_2_instrukcja__uruchamiania__testow_autotoc_md19}
+Poniżej znajdują się kroki, które należy wykonać, aby skompilować i uruchomić testy\+:\hypertarget{md_tests_2_instrukcja__uruchamiania__testow_autotoc_md20}{}\doxysubsection{\texorpdfstring{1. Przejdź do folderu z testami}{1. Przejdź do folderu z testami}}\label{md_tests_2_instrukcja__uruchamiania__testow_autotoc_md20}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ ProjektQuiz/tests}
+
+\end{DoxyCode}
+
+
+Usuń folder build, jeśli istnieje
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{rm\ -\/r\ build}
+
+\end{DoxyCode}
+
+
+Utwórz nowy folder build
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkdir\ build}
+
+\end{DoxyCode}
+
+
+Przejdź do nowo utworzonego folderu
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ build}
+
+\end{DoxyCode}
+
+
+Wygeneruj pliki Makefile za pomocą CMake
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\ -\/G\ "{}MinGW\ Makefiles"{}\ ..}
+
+\end{DoxyCode}
+
+
+Skompiluj projekt
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mingw32-\/make}
+
+\end{DoxyCode}
+
+
+Uruchom testy
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./tests.exe}
+
+\end{DoxyCode}
+ 

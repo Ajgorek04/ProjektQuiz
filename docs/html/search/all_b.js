@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nextquestion_0',['nextQuestion',['../class_quiz_manager.html#a212ee60ff83f71099dc7e26dbb3bf045',1,'QuizManager']]]
+  ['mainwindow_0',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_ui_1_1_main_window.html',1,'Ui::MainWindow'],['../class_main_window.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow::MainWindow()']]]
 ];

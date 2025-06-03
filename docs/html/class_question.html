@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Question Class Reference</title>
+<title>Gra Quiz: Question Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Gra Quiz
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -207,6 +207,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></
 </div><div class="memdoc">
 
 <p>Konstruktor tworzący pytanie z podanym tekstem, odpowiedziami, poprawną odpowiedzią i kategorią. </p>
+<p>Konstruktor parametryczny klasy <a class="el" href="class_question.html" title="Klasa reprezentująca pojedyncze pytanie w quizie.">Question</a>. Inicjalizuje wszystkie pola pytania na podstawie przekazanych argumentów.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>Treść pytania. </td></tr>
@@ -236,7 +237,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></
 </div><div class="memdoc">
 
 <p>Zwraca listę możliwych odpowiedzi. </p>
-<dl class="section return"><dt>Returns</dt><dd>Lista odpowiedzi. </dd></dl>
+<p>Zwraca listę wszystkich odpowiedzi.</p>
+<dl class="section return"><dt>Returns</dt><dd>Lista odpowiedzi.</dd>
+<dd>
+QStringList z odpowiedziami A–D. </dd></dl>
 
 </div>
 </div>
@@ -256,7 +260,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></
 </div><div class="memdoc">
 
 <p>Zwraca kategorię pytania. </p>
-<dl class="section return"><dt>Returns</dt><dd>Kategoria pytania. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Kategoria pytania.</dd>
+<dd>
+Kategoria jako QString. </dd></dl>
 
 </div>
 </div>
@@ -276,7 +282,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></
 </div><div class="memdoc">
 
 <p>Zwraca poprawną odpowiedź. </p>
-<dl class="section return"><dt>Returns</dt><dd>Poprawna odpowiedź jako znak. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Poprawna odpowiedź jako znak.</dd>
+<dd>
+QChar reprezentujący poprawną odpowiedź ('A'–'D'). </dd></dl>
 
 </div>
 </div>
@@ -296,7 +304,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></
 </div><div class="memdoc">
 
 <p>Zwraca treść pytania. </p>
-<dl class="section return"><dt>Returns</dt><dd>Tekst pytania. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Tekst pytania.</dd>
+<dd>
+Tekst pytania jako QString. </dd></dl>
 
 </div>
 </div>

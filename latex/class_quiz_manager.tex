@@ -2,7 +2,7 @@
 \hypertarget{class_quiz_manager}{}\label{class_quiz_manager}\index{QuizManager@{QuizManager}}
 
 
-Klasa zarządzająca pytaniami w quizie.  
+Klasa zarządzająca logiką quizu\+: ładowaniem pytań, nawigacją oraz oceną odpowiedzi.  
 
 
 
@@ -12,27 +12,39 @@ Klasa zarządzająca pytaniami w quizie.
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_quiz_manager_a13b4f1398522047f04b6a078d5534abd}\label{class_quiz_manager_a13b4f1398522047f04b6a078d5534abd} 
-{\bfseries Quiz\+Manager} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_quiz_manager_a13b4f1398522047f04b6a078d5534abd}{Quiz\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny, inicjalizuje indeks pytania. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_quiz_manager_affa11cf61dda97b0d01adc76cf7a349e}{load\+Questions}} (const QString \&file\+Path)
-\begin{DoxyCompactList}\small\item\em Ładuje pytania z pliku CSV. \end{DoxyCompactList}\item 
-\Hypertarget{class_quiz_manager_a98cdb94d06f283446574b595bd8007a2}\label{class_quiz_manager_a98cdb94d06f283446574b595bd8007a2} 
-void {\bfseries shuffle\+Questions} ()
-\begin{DoxyCompactList}\small\item\em Tasuje załadowane pytania w losowej kolejności. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Ładuje wszystkie pytania z pliku CSV. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_quiz_manager_ab3e7606442760a4830b753fde28ce5be}{load\+Questions}} (const QString \&file\+Path, const QString\+List \&categories)
+\begin{DoxyCompactList}\small\item\em Ładuje pytania z pliku CSV, filtrując po kategoriach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_a98cdb94d06f283446574b595bd8007a2}{shuffle\+Questions}} ()
+\begin{DoxyCompactList}\small\item\em Miesza kolejność pytań. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_quiz_manager_a608b3625982c8de8d14499c0ff3b46f7}{has\+More\+Questions}} () const
 \begin{DoxyCompactList}\small\item\em Sprawdza, czy są jeszcze dostępne pytania. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{class_question}{Question}} \& \mbox{\hyperlink{class_quiz_manager_ad2ce0f28c73d1c64c5fd9310bace5cf3}{current\+Question}} () const
-\begin{DoxyCompactList}\small\item\em Zwraca aktualne pytanie. \end{DoxyCompactList}\item 
-\Hypertarget{class_quiz_manager_a212ee60ff83f71099dc7e26dbb3bf045}\label{class_quiz_manager_a212ee60ff83f71099dc7e26dbb3bf045} 
-void {\bfseries next\+Question} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualnie wyświetlane pytanie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_a212ee60ff83f71099dc7e26dbb3bf045}{next\+Question}} ()
 \begin{DoxyCompactList}\small\item\em Przechodzi do następnego pytania. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_quiz_manager_a06c42a9e5a62ad0dfeee43e0cd2ee05b}{check\+Answer}} (QChar answer) const
-\begin{DoxyCompactList}\small\item\em Sprawdza poprawność odpowiedzi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy odpowiedź użytkownika jest poprawna. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Klasa zarządzająca pytaniami w quizie. 
+Klasa zarządzająca logiką quizu\+: ładowaniem pytań, nawigacją oraz oceną odpowiedzi. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_quiz_manager_a13b4f1398522047f04b6a078d5534abd}\index{QuizManager@{QuizManager}!QuizManager@{QuizManager}}
+\index{QuizManager@{QuizManager}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{QuizManager()}{QuizManager()}}
+{\footnotesize\ttfamily \label{class_quiz_manager_a13b4f1398522047f04b6a078d5534abd} 
+Quiz\+Manager\+::\+Quiz\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny, inicjalizuje indeks pytania. 
+
+Konstruktor domyślny – ustawia indeks aktualnego pytania na 0. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_quiz_manager_a06c42a9e5a62ad0dfeee43e0cd2ee05b}\index{QuizManager@{QuizManager}!checkAnswer@{checkAnswer}}
@@ -43,16 +55,23 @@ bool Quiz\+Manager\+::check\+Answer (\begin{DoxyParamCaption}\item[{QChar}]{answ
 
 
 
-Sprawdza poprawność odpowiedzi. 
+Sprawdza, czy odpowiedź użytkownika jest poprawna. 
+
+Sprawdza poprawność odpowiedzi.
 
 
 \begin{DoxyParams}{Parameters}
-{\em answer} & Wybrana odpowiedź. \\
+{\em answer} & Litera odpowiedzi wybranej przez użytkownika. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true jeśli odpowiedź jest poprawna, false w przeciwnym razie. 
+true jeśli odpowiedź jest poprawna.
 \end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em answer} & Litera odpowiedzi użytkownika (A, B, C, D). \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_quiz_manager_ad2ce0f28c73d1c64c5fd9310bace5cf3}\index{QuizManager@{QuizManager}!currentQuestion@{currentQuestion}}
 \index{currentQuestion@{currentQuestion}!QuizManager@{QuizManager}}
 \doxysubsubsection{\texorpdfstring{currentQuestion()}{currentQuestion()}}
@@ -61,10 +80,12 @@ const \mbox{\hyperlink{class_question}{Question}} \& Quiz\+Manager\+::current\+Q
 
 
 
-Zwraca aktualne pytanie. 
+Zwraca aktualnie wyświetlane pytanie. 
+
+Zwraca aktualne pytanie.
 
 \begin{DoxyReturn}{Returns}
-Aktualne pytanie. 
+Referencja do aktualnego pytania. 
 \end{DoxyReturn}
 \Hypertarget{class_quiz_manager_a608b3625982c8de8d14499c0ff3b46f7}\index{QuizManager@{QuizManager}!hasMoreQuestions@{hasMoreQuestions}}
 \index{hasMoreQuestions@{hasMoreQuestions}!QuizManager@{QuizManager}}
@@ -76,28 +97,86 @@ bool Quiz\+Manager\+::has\+More\+Questions (\begin{DoxyParamCaption}{}{}\end{Dox
 
 Sprawdza, czy są jeszcze dostępne pytania. 
 
+Sprawdza, czy są jeszcze pytania do zadania.
+
 \begin{DoxyReturn}{Returns}
-true jeśli są dostępne pytania, false jeśli nie. 
+true jeśli są jeszcze pytania, false jeśli koniec. 
 \end{DoxyReturn}
 \Hypertarget{class_quiz_manager_affa11cf61dda97b0d01adc76cf7a349e}\index{QuizManager@{QuizManager}!loadQuestions@{loadQuestions}}
 \index{loadQuestions@{loadQuestions}!QuizManager@{QuizManager}}
-\doxysubsubsection{\texorpdfstring{loadQuestions()}{loadQuestions()}}
+\doxysubsubsection{\texorpdfstring{loadQuestions()}{loadQuestions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_quiz_manager_affa11cf61dda97b0d01adc76cf7a349e} 
 bool Quiz\+Manager\+::load\+Questions (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{}\end{DoxyParamCaption})}
 
 
 
-Ładuje pytania z pliku CSV. 
+Ładuje wszystkie pytania z pliku CSV. 
+
+Ładuje pytania z pliku CSV bez filtrowania.
 
 
 \begin{DoxyParams}{Parameters}
-{\em file\+Path} & Ścieżka do pliku z pytaniami. \\
+{\em file\+Path} & Ścieżka do pliku CSV z pytaniami. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true jeśli udało się załadować pytania, false w przeciwnym razie. 
+true jeśli udało się załadować pytania, false w przeciwnym razie.
 \end{DoxyReturn}
 
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Ścieżka do pliku. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_quiz_manager_ab3e7606442760a4830b753fde28ce5be}\index{QuizManager@{QuizManager}!loadQuestions@{loadQuestions}}
+\index{loadQuestions@{loadQuestions}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{loadQuestions()}{loadQuestions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_quiz_manager_ab3e7606442760a4830b753fde28ce5be} 
+bool Quiz\+Manager\+::load\+Questions (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{, }\item[{const QString\+List \&}]{categories}{}\end{DoxyParamCaption})}
+
+
+
+Ładuje pytania z pliku CSV, filtrując po kategoriach. 
+
+Ładuje pytania z pliku CSV, filtrując je wg podanych kategorii.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Ścieżka do pliku. \\
+\hline
+{\em categories} & Lista kategorii, które mają być wczytane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeśli udało się załadować przynajmniej jedno pytanie.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Ścieżka do pliku. \\
+\hline
+{\em categories} & Lista wybranych kategorii. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_quiz_manager_a212ee60ff83f71099dc7e26dbb3bf045}\index{QuizManager@{QuizManager}!nextQuestion@{nextQuestion}}
+\index{nextQuestion@{nextQuestion}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{nextQuestion()}{nextQuestion()}}
+{\footnotesize\ttfamily \label{class_quiz_manager_a212ee60ff83f71099dc7e26dbb3bf045} 
+void Quiz\+Manager\+::next\+Question (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przechodzi do następnego pytania. 
+
+Przechodzi do kolejnego pytania, jeśli są jeszcze jakieś. \Hypertarget{class_quiz_manager_a98cdb94d06f283446574b595bd8007a2}\index{QuizManager@{QuizManager}!shuffleQuestions@{shuffleQuestions}}
+\index{shuffleQuestions@{shuffleQuestions}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{shuffleQuestions()}{shuffleQuestions()}}
+{\footnotesize\ttfamily \label{class_quiz_manager_a98cdb94d06f283446574b595bd8007a2} 
+void Quiz\+Manager\+::shuffle\+Questions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Miesza kolejność pytań. 
+
+Miesza kolejność pytań za pomocą algorytmu Fishera-\/\+Yatesa. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

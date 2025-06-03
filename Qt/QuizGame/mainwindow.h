@@ -12,7 +12,7 @@ class MainWindow;
 QT_END_NAMESPACE
 
 /**
- * @brief Główne okno aplikacji Quiz.
+ * @brief Klasa MainWindow — główne okno aplikacji Quiz.
  */
 class MainWindow : public QMainWindow
 {
@@ -20,18 +20,18 @@ class MainWindow : public QMainWindow
 
 public:
     /**
-     * @brief Konstruktor MainWindow.
-     * @param parent Rodzic okna.
+     * @brief Konstruktor klasy MainWindow.
+     * @param parent Wskaźnik na obiekt nadrzędny (domyślnie nullptr).
      */
     MainWindow(QWidget *parent = nullptr);
 
     /**
-     * @brief Destruktor MainWindow.
+     * @brief Destruktor klasy MainWindow.
      */
     ~MainWindow();
 
 private slots:
-    // Sloty obsługujące przyciski i zdarzenia w GUI
+    // === Sloty obsługujące przyciski i interakcje GUI ===
     void on_start_clicked();
     void on_exit_clicked();
     void on_category_clicked();
@@ -58,38 +58,38 @@ private slots:
     void on_back_button3_2_clicked();
     void on_button_confirm_category_clicked();
 
-
 private:
-    Ui::MainWindow *ui; ///< Wskaźnik na UI wygenerowane przez Qt Designer.
+    Ui::MainWindow *ui; ///< Wskaźnik na interfejs użytkownika (UI) wygenerowany przez Qt Designer.
 
-    QuizManager quizManager; ///< Obiekt zarządzający pytaniami w quizie.
+    QuizManager quizManager; ///< Obiekt zarządzający pytaniami, kategoriami i stanem quizu.
 
-    int currentQuestionIndex = 0; ///< Indeks aktualnego pytania.
-    int totalRounds = 0; ///< Całkowita liczba rund.
-    int currentRound = 0; ///< Aktualna runda.
-    int correctAnswers = 0; ///< Liczba poprawnych odpowiedzi.
-    int totalPlayers = 1; ///< Liczba graczy (1 = solo).
-    int currentPlayer = 1; ///< Aktualny gracz w rozgrywce wieloosobowej.
-    QVector<int> playerScores; ///< Wyniki poszczególnych graczy.
+    int currentQuestionIndex = 0; ///< Indeks aktualnego pytania w bieżącej rozgrywce.
+    int totalRounds = 0;          ///< Liczba zaplanowanych rund w trybie gry.
+    int currentRound = 0;         ///< Numer aktualnej rundy.
+    int correctAnswers = 0;       ///< Liczba poprawnych odpowiedzi danego gracza.
+    int totalPlayers = 1;         ///< Liczba graczy (1 = tryb solo, 2+ = multiplayer).
+    int currentPlayer = 1;        ///< Numer aktualnego gracza w trybie multiplayer.
+    QVector<int> playerScores;    ///< Tablica punktów zdobytych przez poszczególnych graczy.
 
     /**
-     * @brief Wczytuje dostępne kategorie quizu.
+     * @brief Wczytuje dostępne kategorie quizu (np. sport, historia).
      */
     void loadCategories();
 
     /**
-     * @brief Wczytuje pytania quizu.
+     * @brief Wczytuje pytania quizu na podstawie wybranych kategorii.
+     * @param categories Lista wybranych kategorii (domyślnie wszystkie).
      */
     void loadQuestions(const QStringList &categories = QStringList());
 
     /**
-     * @brief Wyświetla aktualne pytanie na ekranie.
+     * @brief Wyświetla aktualne pytanie i możliwe odpowiedzi w UI.
      */
     void showQuestion();
 
     /**
-     * @brief Sprawdza odpowiedź użytkownika.
-     * @param answer Wybrana odpowiedź ('A', 'B', 'C', 'D').
+     * @brief Sprawdza, czy wybrana odpowiedź jest poprawna i aktualizuje wynik.
+     * @param answer Litera odpowiedzi ('A', 'B', 'C', 'D').
      */
     void checkAnswer(QChar answer);
 };

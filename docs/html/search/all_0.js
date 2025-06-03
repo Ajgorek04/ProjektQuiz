@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bazy_20pytań_0',['Rozszerzalność bazy pytań',['../md_docs_2plan__funkcjonalnosci.html#autotoc_md9',1,'']]]
+  ['1_20przejdź_20do_20folderu_20z_20testami_0',['1. Przejdź do folderu z testami',['../md_tests_2_instrukcja__uruchamiania__testow.html#autotoc_md20',1,'']]]
 ];

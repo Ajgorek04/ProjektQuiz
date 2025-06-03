@@ -25,7 +25,7 @@
 \DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
 \DoxyCodeLine{00032\ }
 \DoxyCodeLine{00033\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Sloty\ obsługujące\ przyciski\ i\ zdarzenia\ w\ GUI}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ ===\ Sloty\ obsługujące\ przyciski\ i\ interakcje\ GUI\ ===}}
 \DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_start\_clicked();}
 \DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_exit\_clicked();}
 \DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_category\_clicked();}
@@ -47,29 +47,33 @@
 \DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_button\_return\_to\_menu\_2\_clicked();}
 \DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_tryb\_gry\_multiplayer\_clicked();}
 \DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_button\_start\_multiplayer\_clicked();}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *ui;\ }
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_quiz_manager}{QuizManager}}\ quizManager;\ }
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ currentQuestionIndex\ =\ 0;\ }
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ totalRounds\ =\ 0;\ }
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ currentRound\ =\ 0;\ }
-\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ correctAnswers\ =\ 0;\ }
-\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ totalPlayers\ =\ 1;\ }
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ currentPlayer\ =\ 1;\ }
-\DoxyCodeLine{00068\ \ \ \ \ QVector<int>\ playerScores;\ }
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ loadCategories();}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ loadQuestions();}
-\DoxyCodeLine{00079\ }
-\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ showQuestion();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_radio\_mixed\_toggled(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_radio\_select\_toggled(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_back\_button3\_2\_clicked();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_button\_confirm\_category\_clicked();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *ui;\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_quiz_manager}{QuizManager}}\ quizManager;\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ currentQuestionIndex\ =\ 0;\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ totalRounds\ =\ 0;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ currentRound\ =\ 0;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ correctAnswers\ =\ 0;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ totalPlayers\ =\ 1;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ currentPlayer\ =\ 1;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ QVector<int>\ playerScores;\ \ \ \ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ loadCategories();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ loadQuestions(\textcolor{keyword}{const}\ QStringList\ \&categories\ =\ QStringList());}
 \DoxyCodeLine{00084\ }
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ checkAnswer(QChar\ answer);}
-\DoxyCodeLine{00090\ \};}
-\DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ showQuestion();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ checkAnswer(QChar\ answer);}
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
 
 \end{DoxyCode}

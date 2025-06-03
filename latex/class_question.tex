@@ -77,6 +77,8 @@ Question\+::\+Question (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{
 
 Konstruktor tworzący pytanie z podanym tekstem, odpowiedziami, poprawną odpowiedzią i kategorią. 
 
+Konstruktor parametryczny klasy \doxylink{class_question}{Question}. Inicjalizuje wszystkie pola pytania na podstawie przekazanych argumentów.
+
 
 \begin{DoxyParams}{Parameters}
 {\em text} & Treść pytania. \\
@@ -101,8 +103,12 @@ QString\+List Question\+::get\+Answers (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 Zwraca listę możliwych odpowiedzi. 
 
+Zwraca listę wszystkich odpowiedzi.
+
 \begin{DoxyReturn}{Returns}
-Lista odpowiedzi. 
+Lista odpowiedzi.
+
+QString\+List z odpowiedziami A–D. 
 \end{DoxyReturn}
 \Hypertarget{class_question_a5e75f84c965825e7d06804aae437d40b}\index{Question@{Question}!getCategory@{getCategory}}
 \index{getCategory@{getCategory}!Question@{Question}}
@@ -115,7 +121,9 @@ QString Question\+::get\+Category (\begin{DoxyParamCaption}{}{}\end{DoxyParamCap
 Zwraca kategorię pytania. 
 
 \begin{DoxyReturn}{Returns}
-Kategoria pytania. 
+Kategoria pytania.
+
+Kategoria jako QString. 
 \end{DoxyReturn}
 \Hypertarget{class_question_a0723c4f1d7fa25d1e7ef869fce3bf564}\index{Question@{Question}!getCorrectAnswer@{getCorrectAnswer}}
 \index{getCorrectAnswer@{getCorrectAnswer}!Question@{Question}}
@@ -128,7 +136,9 @@ QChar Question\+::get\+Correct\+Answer (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 Zwraca poprawną odpowiedź. 
 
 \begin{DoxyReturn}{Returns}
-Poprawna odpowiedź jako znak. 
+Poprawna odpowiedź jako znak.
+
+QChar reprezentujący poprawną odpowiedź (\textquotesingle{}A\textquotesingle{}–\textquotesingle{}D\textquotesingle{}). 
 \end{DoxyReturn}
 \Hypertarget{class_question_a7dce5d583ba08ebd5c8a6544e71dbb0a}\index{Question@{Question}!getText@{getText}}
 \index{getText@{getText}!Question@{Question}}
@@ -141,7 +151,9 @@ QString Question\+::get\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 Zwraca treść pytania. 
 
 \begin{DoxyReturn}{Returns}
-Tekst pytania. 
+Tekst pytania.
+
+Tekst pytania jako QString. 
 \end{DoxyReturn}
 
 

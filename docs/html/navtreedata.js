@@ -24,13 +24,18 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "Gra Quiz", "index.html", [
     [ "Plan funkcjonalności gry quizowej", "md_docs_2plan__funkcjonalnosci.html", [
       [ "Cel gry", "md_docs_2plan__funkcjonalnosci.html#autotoc_md5", null ],
       [ "Tryby gry", "md_docs_2plan__funkcjonalnosci.html#autotoc_md6", null ],
       [ "Struktura pytań", "md_docs_2plan__funkcjonalnosci.html#autotoc_md7", null ],
       [ "Interfejs użytkownika", "md_docs_2plan__funkcjonalnosci.html#autotoc_md8", null ],
       [ "Rozszerzalność bazy pytań", "md_docs_2plan__funkcjonalnosci.html#autotoc_md9", null ]
+    ] ],
+    [ "Testy jednostkowe - ProjektQuiz", "md_tests_2_instrukcja__uruchamiania__testow.html", [
+      [ "🔧 Kompilacja i uruchamianie testów", "md_tests_2_instrukcja__uruchamiania__testow.html#autotoc_md19", [
+        [ "Przejdź do folderu z testami", "md_tests_2_instrukcja__uruchamiania__testow.html#autotoc_md20", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -49,7 +54,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_qt_2_quiz_game_2_quiz_game__autogen_2_e_w_i_e_g_a46_w_w_2moc__mainwindow_8cpp_source.html"
+"_qt_2_quiz_game_2_quiz_game__autogen_2moc__predefs_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

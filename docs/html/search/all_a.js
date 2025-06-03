@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainwindow_0',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_ui_1_1_main_window.html',1,'Ui::MainWindow'],['../class_main_window.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow::MainWindow()']]]
+  ['loadquestions_0',['loadQuestions',['../class_quiz_manager.html#affa11cf61dda97b0d01adc76cf7a349e',1,'QuizManager::loadQuestions(const QString &amp;filePath)'],['../class_quiz_manager.html#ab3e7606442760a4830b753fde28ce5be',1,'QuizManager::loadQuestions(const QString &amp;filePath, const QStringList &amp;categories)']]]
 ];

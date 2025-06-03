@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opis_0',['Opis',['../F:/Coding/ProjektQuiz/DataBaseEditor/README.MD#autotoc_md1',1,'']]],
-  ['opis_20projektu_1',['Opis Projektu',['../F:/Coding/ProjektQuiz/docs/README.MD#autotoc_md12',1,'']]]
+  ['nextquestion_0',['nextQuestion',['../class_quiz_manager.html#a212ee60ff83f71099dc7e26dbb3bf045',1,'QuizManager']]]
 ];

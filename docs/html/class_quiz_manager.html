@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: QuizManager Class Reference</title>
+<title>Gra Quiz: QuizManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Gra Quiz
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -109,41 +109,62 @@ $(function(){initNavTree('class_quiz_manager.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa zarządzająca pytaniami w quizie.  
+<p>Klasa zarządzająca logiką quizu: ładowaniem pytań, nawigacją oraz oceną odpowiedzi.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="quizmanager_8h_source.html">quizmanager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13b4f1398522047f04b6a078d5534abd" id="r_a13b4f1398522047f04b6a078d5534abd"><td class="memItemLeft" align="right" valign="top"><a id="a13b4f1398522047f04b6a078d5534abd" name="a13b4f1398522047f04b6a078d5534abd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>QuizManager</b> ()</td></tr>
-<tr class="memdesc:a13b4f1398522047f04b6a078d5534abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor domyślny. <br /></td></tr>
+<tr class="memitem:a13b4f1398522047f04b6a078d5534abd" id="r_a13b4f1398522047f04b6a078d5534abd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13b4f1398522047f04b6a078d5534abd">QuizManager</a> ()</td></tr>
+<tr class="memdesc:a13b4f1398522047f04b6a078d5534abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor domyślny, inicjalizuje indeks pytania.  <br /></td></tr>
 <tr class="separator:a13b4f1398522047f04b6a078d5534abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa11cf61dda97b0d01adc76cf7a349e" id="r_affa11cf61dda97b0d01adc76cf7a349e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affa11cf61dda97b0d01adc76cf7a349e">loadQuestions</a> (const QString &amp;filePath)</td></tr>
-<tr class="memdesc:affa11cf61dda97b0d01adc76cf7a349e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ładuje pytania z pliku CSV.  <br /></td></tr>
+<tr class="memdesc:affa11cf61dda97b0d01adc76cf7a349e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ładuje wszystkie pytania z pliku CSV.  <br /></td></tr>
 <tr class="separator:affa11cf61dda97b0d01adc76cf7a349e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98cdb94d06f283446574b595bd8007a2" id="r_a98cdb94d06f283446574b595bd8007a2"><td class="memItemLeft" align="right" valign="top"><a id="a98cdb94d06f283446574b595bd8007a2" name="a98cdb94d06f283446574b595bd8007a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shuffleQuestions</b> ()</td></tr>
-<tr class="memdesc:a98cdb94d06f283446574b595bd8007a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tasuje załadowane pytania w losowej kolejności. <br /></td></tr>
+<tr class="memitem:ab3e7606442760a4830b753fde28ce5be" id="r_ab3e7606442760a4830b753fde28ce5be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3e7606442760a4830b753fde28ce5be">loadQuestions</a> (const QString &amp;filePath, const QStringList &amp;categories)</td></tr>
+<tr class="memdesc:ab3e7606442760a4830b753fde28ce5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ładuje pytania z pliku CSV, filtrując po kategoriach.  <br /></td></tr>
+<tr class="separator:ab3e7606442760a4830b753fde28ce5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cdb94d06f283446574b595bd8007a2" id="r_a98cdb94d06f283446574b595bd8007a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98cdb94d06f283446574b595bd8007a2">shuffleQuestions</a> ()</td></tr>
+<tr class="memdesc:a98cdb94d06f283446574b595bd8007a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Miesza kolejność pytań.  <br /></td></tr>
 <tr class="separator:a98cdb94d06f283446574b595bd8007a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608b3625982c8de8d14499c0ff3b46f7" id="r_a608b3625982c8de8d14499c0ff3b46f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608b3625982c8de8d14499c0ff3b46f7">hasMoreQuestions</a> () const</td></tr>
 <tr class="memdesc:a608b3625982c8de8d14499c0ff3b46f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy są jeszcze dostępne pytania.  <br /></td></tr>
 <tr class="separator:a608b3625982c8de8d14499c0ff3b46f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2ce0f28c73d1c64c5fd9310bace5cf3" id="r_ad2ce0f28c73d1c64c5fd9310bace5cf3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_question.html">Question</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2ce0f28c73d1c64c5fd9310bace5cf3">currentQuestion</a> () const</td></tr>
-<tr class="memdesc:ad2ce0f28c73d1c64c5fd9310bace5cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca aktualne pytanie.  <br /></td></tr>
+<tr class="memdesc:ad2ce0f28c73d1c64c5fd9310bace5cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca aktualnie wyświetlane pytanie.  <br /></td></tr>
 <tr class="separator:ad2ce0f28c73d1c64c5fd9310bace5cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212ee60ff83f71099dc7e26dbb3bf045" id="r_a212ee60ff83f71099dc7e26dbb3bf045"><td class="memItemLeft" align="right" valign="top"><a id="a212ee60ff83f71099dc7e26dbb3bf045" name="a212ee60ff83f71099dc7e26dbb3bf045"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>nextQuestion</b> ()</td></tr>
-<tr class="memdesc:a212ee60ff83f71099dc7e26dbb3bf045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przechodzi do następnego pytania. <br /></td></tr>
+<tr class="memitem:a212ee60ff83f71099dc7e26dbb3bf045" id="r_a212ee60ff83f71099dc7e26dbb3bf045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a212ee60ff83f71099dc7e26dbb3bf045">nextQuestion</a> ()</td></tr>
+<tr class="memdesc:a212ee60ff83f71099dc7e26dbb3bf045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przechodzi do następnego pytania.  <br /></td></tr>
 <tr class="separator:a212ee60ff83f71099dc7e26dbb3bf045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c42a9e5a62ad0dfeee43e0cd2ee05b" id="r_a06c42a9e5a62ad0dfeee43e0cd2ee05b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c42a9e5a62ad0dfeee43e0cd2ee05b">checkAnswer</a> (QChar answer) const</td></tr>
-<tr class="memdesc:a06c42a9e5a62ad0dfeee43e0cd2ee05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza poprawność odpowiedzi.  <br /></td></tr>
+<tr class="memdesc:a06c42a9e5a62ad0dfeee43e0cd2ee05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy odpowiedź użytkownika jest poprawna.  <br /></td></tr>
 <tr class="separator:a06c42a9e5a62ad0dfeee43e0cd2ee05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Klasa zarządzająca pytaniami w quizie. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Klasa zarządzająca logiką quizu: ładowaniem pytań, nawigacją oraz oceną odpowiedzi. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a13b4f1398522047f04b6a078d5534abd" name="a13b4f1398522047f04b6a078d5534abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b4f1398522047f04b6a078d5534abd">&#9670;&#160;</a></span>QuizManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QuizManager::QuizManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor domyślny, inicjalizuje indeks pytania. </p>
+<p>Konstruktor domyślny – ustawia indeks aktualnego pytania na 0. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06c42a9e5a62ad0dfeee43e0cd2ee05b" name="a06c42a9e5a62ad0dfeee43e0cd2ee05b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06c42a9e5a62ad0dfeee43e0cd2ee05b">&#9670;&#160;</a></span>checkAnswer()</h2>
 
@@ -159,14 +180,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>nextQuestion</b> ()</
       </table>
 </div><div class="memdoc">
 
-<p>Sprawdza poprawność odpowiedzi. </p>
+<p>Sprawdza, czy odpowiedź użytkownika jest poprawna. </p>
+<p>Sprawdza poprawność odpowiedzi.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">answer</td><td>Wybrana odpowiedź. </td></tr>
+    <tr><td class="paramname">answer</td><td>Litera odpowiedzi wybranej przez użytkownika. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true jeśli odpowiedź jest poprawna, false w przeciwnym razie. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli odpowiedź jest poprawna.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">answer</td><td>Litera odpowiedzi użytkownika (A, B, C, D). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -185,8 +213,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>nextQuestion</b> ()</
       </table>
 </div><div class="memdoc">
 
-<p>Zwraca aktualne pytanie. </p>
-<dl class="section return"><dt>Returns</dt><dd>Aktualne pytanie. </dd></dl>
+<p>Zwraca aktualnie wyświetlane pytanie. </p>
+<p>Zwraca aktualne pytanie.</p>
+<dl class="section return"><dt>Returns</dt><dd>Referencja do aktualnego pytania. </dd></dl>
 
 </div>
 </div>
@@ -206,12 +235,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>nextQuestion</b> ()</
 </div><div class="memdoc">
 
 <p>Sprawdza, czy są jeszcze dostępne pytania. </p>
-<dl class="section return"><dt>Returns</dt><dd>true jeśli są dostępne pytania, false jeśli nie. </dd></dl>
+<p>Sprawdza, czy są jeszcze pytania do zadania.</p>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli są jeszcze pytania, false jeśli koniec. </dd></dl>
 
 </div>
 </div>
 <a id="affa11cf61dda97b0d01adc76cf7a349e" name="affa11cf61dda97b0d01adc76cf7a349e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa11cf61dda97b0d01adc76cf7a349e">&#9670;&#160;</a></span>loadQuestions()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affa11cf61dda97b0d01adc76cf7a349e">&#9670;&#160;</a></span>loadQuestions() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,14 +255,100 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>nextQuestion</b> ()</
       </table>
 </div><div class="memdoc">
 
-<p>Ładuje pytania z pliku CSV. </p>
+<p>Ładuje wszystkie pytania z pliku CSV. </p>
+<p>Ładuje pytania z pliku CSV bez filtrowania.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filePath</td><td>Ścieżka do pliku z pytaniami. </td></tr>
+    <tr><td class="paramname">filePath</td><td>Ścieżka do pliku CSV z pytaniami. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true jeśli udało się załadować pytania, false w przeciwnym razie. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli udało się załadować pytania, false w przeciwnym razie.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ścieżka do pliku. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3e7606442760a4830b753fde28ce5be" name="ab3e7606442760a4830b753fde28ce5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e7606442760a4830b753fde28ce5be">&#9670;&#160;</a></span>loadQuestions() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QuizManager::loadQuestions </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>categories</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ładuje pytania z pliku CSV, filtrując po kategoriach. </p>
+<p>Ładuje pytania z pliku CSV, filtrując je wg podanych kategorii.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ścieżka do pliku. </td></tr>
+    <tr><td class="paramname">categories</td><td>Lista kategorii, które mają być wczytane. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli udało się załadować przynajmniej jedno pytanie.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ścieżka do pliku. </td></tr>
+    <tr><td class="paramname">categories</td><td>Lista wybranych kategorii. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a212ee60ff83f71099dc7e26dbb3bf045" name="a212ee60ff83f71099dc7e26dbb3bf045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212ee60ff83f71099dc7e26dbb3bf045">&#9670;&#160;</a></span>nextQuestion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuizManager::nextQuestion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przechodzi do następnego pytania. </p>
+<p>Przechodzi do kolejnego pytania, jeśli są jeszcze jakieś. </p>
+
+</div>
+</div>
+<a id="a98cdb94d06f283446574b595bd8007a2" name="a98cdb94d06f283446574b595bd8007a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cdb94d06f283446574b595bd8007a2">&#9670;&#160;</a></span>shuffleQuestions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuizManager::shuffleQuestions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Miesza kolejność pytań. </p>
+<p>Miesza kolejność pytań za pomocą algorytmu Fishera-Yatesa. </p>
 
 </div>
 </div>
