@@ -20,7 +20,7 @@ Gra quizowa, która umożliwia wielu graczom odpowiadanie na pytania z różnych
 
 ## Instalacja
 
-- Pobierz pliki gry klikając w odnośnik obok ⟶ [QuizGame](https://mega.nz/file/z9pgzJwA#dAs6mXSvrJZiZ5Xx6Tknd_xGZBwm19TCpJ9VyZrIbgg)
+- Pobierz pliki gry klikając w odnośnik obok ⟶ [QuizGame](https://mega.nz/file/ixY3nR7B#-soO4t_i_LuxEPe0bzQkicdUMizqfyOHieJA-E0eM9Y)
 - Rozpakuj pobrany folder (prawy przycisk myszy ⟶ wyodrębnij wszytkie)
 - Przejdź do folderu exe
 - Uruchom plik QuizGame.exe

@@ -73,7 +73,8 @@ void MainWindow::on_category_clicked()
  */
 void MainWindow::loadCategories()
 {
-    QFile file(":/categories.csv");
+    QString exeDir = QCoreApplication::applicationDirPath();
+    QFile file(exeDir + "/categories.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku categories.csv";
         return;
@@ -100,13 +101,16 @@ void MainWindow::loadCategories()
  */
 void MainWindow::loadQuestions(const QStringList &categories)
 {
-    if (quizManager.loadQuestions(":/questions.csv", categories)) {
+    QString path = QCoreApplication::applicationDirPath() + "/questions.csv";
+
+    if (quizManager.loadQuestions(path, categories)) {
         quizManager.shuffleQuestions();
         showQuestion();
     } else {
-        qDebug() << "Błąd podczas ładowania pytań";
+        qDebug() << "Błąd podczas ładowania pytań z: " << path;
     }
 }
+
 
 /**
  * @brief Obsługuje przycisk powrotu do menu głównego.
