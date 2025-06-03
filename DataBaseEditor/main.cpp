@@ -4,7 +4,7 @@
 #include <sstream>
 #include <set>
 #include <limits>
-#include <algorithm> // Dla std::transform
+#include <algorithm>
 
 using namespace std;
 
